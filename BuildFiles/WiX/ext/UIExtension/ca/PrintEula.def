@@ -1,0 +1,7 @@
+; printeula.def : declares the module parameters for the printeula.dll
+
+LIBRARY      "printeula"
+
+EXPORTS
+	PrintEula
+	ValidatePath

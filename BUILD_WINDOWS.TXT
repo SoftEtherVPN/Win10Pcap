@@ -1,0 +1,28 @@
+How to build Win10Pcap for Windows
+==================================
+
+
+Requirements
+------------
+
+You need to install the following software to build Win10Pcap.
+
+- Microsoft Windows XP, Vista, 7, 8 or later.
+- Microsoft Visual Studio 2008 with the latest SP (SP1 9.0.30729.4462 QFE).
+  Make sure that you installed the x64 compiler and build tools.
+- WinDDK 7600.16385.0 or greater version
+  (You need to set the include and the lib directory path in the
+   "NdisDriver" project.)
+
+* Note:
+  Visual Studio 2008 SP1 is required to build Win10Pcap on Windows.
+  Please make sure that VS2008 'SP1' is installed.
+  Visual Studio 2010, 2012 or 2013 is currently not supported.
+  Visual Studio 2008 Express Edition is not supported.
+  Standard Edition, Professional Edition, Team System or Team Suite is
+  required.
+
+
+***************************
+Thank you using Win10Pcap !
+http://www.win10pcap.org/

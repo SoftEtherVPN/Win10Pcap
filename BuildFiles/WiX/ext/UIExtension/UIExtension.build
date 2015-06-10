@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<project name="uiextension" default="uiextension.inc" xmlns="http://nant.sf.net/release/0.85-rc3/nant.xsd">
+  <description>
+    Copyright (c) Microsoft Corporation.  All rights reserved.
+    
+    The use and distribution terms for this software are covered by the
+    Common Public License 1.0 (http://opensource.org/licenses/cpl.php)
+    which can be found in the file CPL.TXT at the root of this distribution.
+    By using this software in any fashion, you are agreeing to be bound by
+    the terms of this license.
+    
+    You must not remove this notice, or any other, from this software.
+
+    uiextension.build - Builds the uiextension project
+  </description>
+
+  <!-- Include the global build properties -->
+  <include buildfile="..\..\..\wix.include" unless="${property::exists('wix.properties.defined')}" />
+
+  <!--
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  // Properties
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  -->
+
+  <!-- extension directories -->
+  <property name="uiextension.ca.dir.src" value="${dir.src.ext}\uiextension\ca" readonly="true" />
+
+  <!-- target -->
+  <property name="file.target.printeuladll" value="${dir.target.wix}\PrintEula.dll" readonly="true" />
+
+  <!--
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  // Targets
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  -->
+
+  <!-- Build -->
+  <target name="uiextension.build" description="Peforms a full rebuild (clean then build)" depends="uiextension.clean, uiextension.inc" />
+
+  <!-- Clean -->
+  <target name="uiextension.clean" description="Cleans the build">
+    <delete dir="${dir.build.ext.uiextension}" failonerror="false" if="${directory::exists(dir.build.ext.uiextension)}" />
+    <delete failonerror="false">
+      <fileset basedir="${dir.target.wix}">
+        <include name="PrintEula.dll" />
+      </fileset>
+    </delete>
+  </target>
+
+  <!-- Inc -->
+  <target name="uiextension.inc" description="Performs an incremental build" depends="makeDirs, createKeyFile">
+    <fileset id="compileCpp.fileset.sources" basedir="${uiextension.ca.dir.src}">
+      <include name="printeula.cpp" />
+      <include name="dllmain.cpp" />
+      <include name="drivecheck.cpp" />
+    </fileset>
+    <property name="compileCpp.dir.build" value="${dir.build.ext.uiextension}" />
+    <property name="compileCpp.file.precomp.h" value="${uiextension.ca.dir.src}\precomp.h" />
+    <property name="compileCpp.additionalOptions" value="-I&quot;${dir.src.ca.wcautil}&quot;" />
+    <property name="compileCpp.file.rc" value="${uiextension.ca.dir.src}\printeula.rc" />
+    <property name="makeNativeDll.file.target" value="${file.target.printeuladll}" />
+    <property name="makeNativeDll.file.def" value="${uiextension.ca.dir.src}\printeula.def" />
+    <property name="makeNativeDll.additionalLibs" value="&quot;${file.target.wcautil}&quot; &quot;${file.target.dutil}&quot; &quot;${dir.platformsdk.lib}\msi.lib&quot; &quot;${dir.platformsdk.lib}\comdlg32.lib&quot; &quot;${dir.platformsdk.lib}\gdi32.lib&quot; &quot;${dir.platformsdk.lib}\shlwapi.lib&quot;" dynamic="true" />
+
+
+    <!-- Make scaexec.dll -->
+    <call target="makeNativeDll" />
+  </target>
+
+</project>

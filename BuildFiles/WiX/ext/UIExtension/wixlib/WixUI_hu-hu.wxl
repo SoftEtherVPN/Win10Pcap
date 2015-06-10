@@ -1,0 +1,599 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+    Copyright (c) Microsoft Corporation.  All rights reserved.
+
+    The use and distribution terms for this software are covered by the
+    Common Public License 1.0 (http://opensource.org/licenses/cpl.php)
+    which can be found in the file CPL.TXT at the root of this distribution.
+    By using this software in any fashion, you are agreeing to be bound by
+    the terms of this license.
+
+    You must not remove this notice, or any other, from this software.
+-->
+<WixLocalization Culture="hu-hu" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+  <String Id="WixUIBack" Overridable="yes">&amp;Vissza</String>
+  <String Id="WixUINext" Overridable="yes">&amp;Tovább</String>
+  <String Id="WixUICancel" Overridable="yes">&amp;Mégse</String>
+  <String Id="WixUIFinish" Overridable="yes">&amp;Befejezés</String>
+  <String Id="WixUIRetry" Overridable="yes">&amp;Ismét</String>
+  <String Id="WixUIIgnore" Overridable="yes">&amp;Tovább</String>
+  <String Id="WixUIYes" Overridable="yes">&amp;Igen</String>
+  <String Id="WixUINo" Overridable="yes">&amp;Nem</String>
+  <String Id="WixUIOK" Overridable="yes">&amp;OK</String>
+  <String Id="WixUIPrint" Overridable="yes">&amp;Nyomtatás</String>
+
+  <String Id="AdvancedWelcomeEulaDlg_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="AdvancedWelcomeEulaDlgBannerBitmap" Overridable="yes">WixUI_Bmp_Banner</String>
+  <String Id="AdvancedWelcomeEulaDlgTitle" Overridable="yes">{\WixUI_Font_Title}Kérjük, olvassa el gondosan a [ProductName] licenszszerződését.</String>
+  <String Id="AdvancedWelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes">&amp;Elfogadom a licencszerződés feltételeit.</String>
+  <String Id="AdvancedWelcomeEulaDlgDescriptionPerMachine" Overridable="yes">A Telepítés gombra kattintva minden felhasználó számára telepítheti a terméket. A Speciális gomb segítségével állíthatja be a telepítés jellemzőit.</String>
+  <String Id="AdvancedWelcomeEulaDlgDescriptionPerUser" Overridable="yes">A Telepítés gombra kattintva saját maga számára telepítheti a terméket. A Speciális gomb segítségével állíthatja be a telepítés jellemzőit.</String>
+  <String Id="AdvancedWelcomeEulaDlgInstall" Overridable="yes">&amp;Telepítés</String>
+  <String Id="AdvancedWelcomeEulaDlgAdvanced" Overridable="yes">&amp;Speciális</String>
+  <String Id="Advanced_Font_Normal_Size" Overridable="yes">8</String>
+  <String Id="Advanced_Font_Bigger_Size" Overridable="yes">12</String>
+  <String Id="Advanced_Font_Title_Size" Overridable="yes">9</String>
+  <String Id="Advanced_Font_Emphasized_Size" Overridable="yes">8</String>
+  <String Id="Advanced_Font_FaceName" Overridable="yes">Tahoma</String>
+
+  <String Id="BrowseDlg_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="BrowseDlgComboLabel" Overridable="yes">&amp;Hely:</String>
+  <String Id="BrowseDlgWixUI_Bmp_Up" Overridable="yes">WixUI_Bmp_Up</String>
+  <String Id="BrowseDlgWixUI_Bmp_UpTooltip" Overridable="yes">Eggyel feljebb</String>
+  <String Id="BrowseDlgNewFolder" Overridable="yes">WixUI_Bmp_New</String>
+  <String Id="BrowseDlgNewFolderTooltip" Overridable="yes">Új mappa</String>
+  <String Id="BrowseDlgPathLabel" Overridable="yes">&amp;Mappa neve:</String>
+  <String Id="BrowseDlgBannerBitmap" Overridable="yes">WixUI_Bmp_Banner</String>
+  <String Id="BrowseDlgDescription" Overridable="yes">Tallózással jelölje ki a telepítés helyét.</String>
+  <String Id="BrowseDlgTitle" Overridable="yes">{\WixUI_Font_Title}Telepítés helyének módosítása</String>
+
+  <String Id="CancelDlg_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="CancelDlgText" Overridable="yes">Biztosan megszakítja a [ProductName] telepítését?</String>
+  <String Id="CancelDlgIcon" Overridable="yes">WixUI_Ico_Info</String>
+  <String Id="CancelDlgIconTooltip" Overridable="yes">Ikon</String>
+
+  <String Id="CustomizeDlg_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="CustomizeDlgTree" Overridable="yes">Összetevők</String>
+  <String Id="CustomizeDlgBrowse" Overridable="yes">&amp;Tallózás…</String>
+  <String Id="CustomizeDlgReset" Overridable="yes">&amp;Alaphelyzet</String>
+  <String Id="CustomizeDlgDiskCost" Overridable="yes">&amp;Lemezigény</String>
+  <String Id="CustomizeDlgBannerBitmap" Overridable="yes">WixUI_Bmp_Banner</String>
+  <String Id="CustomizeDlgText" Overridable="yes">A programrészek telepítési módját az alanti ikonokra kattintva változtathatja meg.</String>
+  <String Id="CustomizeDlgDescription" Overridable="yes">Válassza ki a telepíteni kívánt programrészeket.</String>
+  <String Id="CustomizeDlgTitle" Overridable="yes">{\WixUI_Font_Title}Egyedi telepítés</String>
+  <String Id="CustomizeDlgItemDescription" Overridable="yes">A kiválaszott tétel leírása</String>
+  <String Id="CustomizeDlgItemSize" Overridable="yes">A kiválaszott tétel mérete</String>
+  <String Id="CustomizeDlgLocation" Overridable="yes">A kiválasztott célmappa</String>
+  <String Id="CustomizeDlgLocationLabel" Overridable="yes">Hely:</String>
+
+  <String Id="DiskCostDlg_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="DiskCostDlgBannerBitmap" Overridable="yes">WixUI_Bmp_Banner</String>
+  <String Id="DiskCostDlgText" Overridable="yes">A kijelölt köteteken nincs elég hely a kiválasztott szolgáltatások telepítéséhez. Töröljön fájlokat, válasszon ki kevesebb szolgáltatást a helyi meghajtókra való telepítésre, vagy válasszon más célmeghajtókat.</String>
+  <String Id="DiskCostDlgDescription" Overridable="yes">A kiválaszott programrészek lemezterület-igénye.</String>
+  <String Id="DiskCostDlgTitle" Overridable="yes">{\WixUI_Font_Title}Lemezterület-igény</String>
+  <String Id="DiskCostDlgVolumeList" Overridable="yes">{120}{70}{70}{70}{70}</String>
+
+  <String Id="ErrorDlg_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="ErrorDlgErrorText" Overridable="yes">A telepítő üzenete</String>
+  <String Id="ErrorDlgErrorIcon" Overridable="yes">WixUI_Ico_Info</String>
+  <String Id="ErrorDlgErrorIconTooltip" Overridable="yes">Ikon</String>
+
+  <String Id="ExitDialog_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="ExitDialogBitmap" Overridable="yes">WixUI_Bmp_Dialog</String>
+  <String Id="ExitDialogDescription" Overridable="yes">A varázslóból a Befejezés gombbal léphet ki.</String>
+  <String Id="ExitDialogTitle" Overridable="yes">{\WixUI_Font_Bigger}A [ProductName] telepítése befejeződött.</String>
+
+  <String Id="FatalError_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="FatalErrorBitmap" Overridable="yes">WixUI_Bmp_Dialog</String>
+  <String Id="FatalErrorTitle" Overridable="yes">{\WixUI_Font_Bigger}A [ProductName] telepítése nem sikerült.</String>
+  <String Id="FatalErrorDescription1" Overridable="yes">A telepítés egy hiba miatt megszakadt. A rendszer nem módosult. A telepítés befejezéséhez futtassa újra a telepítőt.</String>
+  <String Id="FatalErrorDescription2" Overridable="yes">A varázslóból a Befejezés gombbal léphet ki.</String>
+
+  <String Id="FeaturesDlg_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="FeaturesDlgTree" Overridable="yes">A termék összetevői</String>
+  <String Id="FeaturesDlgBannerBitmap" Overridable="yes">WixUI_Bmp_Banner</String>
+  <String Id="FeaturesDlgDescription" Overridable="yes">Válassza ki a telepíteni kívánt összetevőket.</String>
+  <String Id="FeaturesDlgTitle" Overridable="yes">{\WixUI_Font_Title}Termék összetevői</String>
+  <String Id="FeaturesDlgItemDescription" Overridable="yes">FeaturesDlgItemDescription</String>
+  <String Id="FeaturesDlgItemSize" Overridable="yes">FeaturesDlgItemSize</String>
+  <String Id="FeaturesDlgInstall" Overridable="yes">&amp;Telepítés</String>
+  <String Id="FeaturesDlgChange" Overridable="yes">&amp;Módosítás</String>
+
+  <String Id="FilesInUse_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="FilesInUseExit" Overridable="yes">&amp;Kilépés</String>
+  <String Id="FilesInUseBannerBitmap" Overridable="yes">WixUI_Bmp_Banner</String>
+  <String Id="FilesInUseText" Overridable="yes">Zárja be az alább felsorolt alkalmazásokat, majd a telepítést az Ismét gombbal folytassa. Ha azt szeretné, hogy a [ProductName] telepítője a szükséges fájlok másolása után a számítógép újraindításával elvégezze ezt a műveletet, kattintson a Tovább gombra. A telepítést a Kilépés gombbal szakíthatja meg.</String>
+  <String Id="FilesInUseDescription" Overridable="yes">A frissítendő fájlok némelyike jelenleg használatban van.</String>
+  <String Id="FilesInUseTitle" Overridable="yes">{\WixUI_Font_Title}Telepítési ütközés</String>
+  
+  <String Id="InstallDirDlg_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="InstallDirDlgChange" Overridable="yes">&amp;Módosítás</String>
+  <String Id="InstallDirDlgTitle" Overridable="yes">{\WixUI_Font_Title}Célkönyvtár</String>
+  <String Id="InstallDirDlgDescription" Overridable="yes">Ha a Tovább gombra kattint, a telepítő az alapértelmezett könyvtárba telepít, ha pedig a Módosítás gombra, akkor megadhat helyette egy másik könyvtárat.</String>
+  <String Id="InstallDirDlgBannerBitmap" Overridable="yes">WixUI_Bmp_Banner</String>
+  <String Id="InstallDirDlgFolderLabel" Overridable="yes">A [ProductName] telepítésének célkönyvtára:</String>
+
+  <String Id="InstallScopeDlg_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="InstallScopeDlgBannerBitmap" Overridable="yes">WixUI_Bmp_Banner</String>
+  <String Id="InstallScopeDlgDescription" Overridable="yes">Válassza ki a telepítés hatáskörét és célmappáját</String>
+  <String Id="InstallScopeDlgTitle" Overridable="yes">{\WixUI_Font_Title}Telepítés hatáskor</String>
+  <String Id="InstallScopeDlgPerUser" Overridable="yes">{\WixUI_Font_Emphasized}&amp;Csak a [USERNAME] nevű felhasználó számára</String>
+  <String Id="InstallScopeDlgPerUserDescription" Overridable="yes">A [ProductName] az ön felhasználói mappájába kerül, és csak ön használhatja majd. A telepítéshez nincs szükség rendszergazda-jogosultságra.</String>
+  <String Id="InstallScopeDlgNoPerUserDescription" Overridable="yes">A [ProductName] terméket nem lehet csak egyes felhasználók számára telepíteni.</String>
+  <String Id="InstallScopeDlgPerMachine" Overridable="yes">{\WixUI_Font_Emphasized}A számítógép &amp;minden felhasználója számára</String>
+  <String Id="InstallScopeDlgPerMachineDescription" Overridable="yes">A [ProductName] közös mappába kerül, és minden felhasználó használhatja majd. A telepítéshez rendszergazda-jogosultságra van szükség.</String>
+  <String Id="InstallScopeDlgFolderLabel" Overridable="yes">&amp;Célmappa:</String>
+  <String Id="InstallScopeDlgChange" Overridable="yes">&amp;Módosítás…</String>
+
+  <String Id="InvalidDirDlg_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="InvalidDirDlgText" Overridable="yes">Célmappát csak a helyi merevlemezen jelölhet ki.</String>
+  <String Id="InvalidDirDlgIcon" Overridable="yes">WixUI_Ico_Info</String>
+  <String Id="InvalidDirDlgIconTooltip" Overridable="yes">Információs ikon</String>
+
+  <String Id="LicenseAgreementDlg_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="LicenseAgreementDlgLicenseAcceptedCheckBox" Overridable="yes">&amp;Elfogadom a licencszerződés feltételeit.</String>
+  <String Id="LicenseAgreementDlgBannerBitmap" Overridable="yes">WixUI_Bmp_Banner</String>
+  <String Id="LicenseAgreementDlgDescription" Overridable="yes">Kérjük, olvassa el gondosan az alábbi licencszerződést.</String>
+  <String Id="LicenseAgreementDlgTitle" Overridable="yes">{\WixUI_Font_Title}Végfelhasználói licencszerződés</String>
+
+  <String Id="MaintenanceTypeDlg_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="MaintenanceTypeDlgChangeButton" Overridable="yes">&amp;Módosítás</String>
+  <String Id="MaintenanceTypeDlgChangeButtonTooltip" Overridable="yes">Módosító telepítés</String>
+  <String Id="MaintenanceTypeDlgRepairButton" Overridable="yes">&amp;Javítás</String>
+  <String Id="MaintenanceTypeDlgRepairButtonTooltip" Overridable="yes">Javító telepítés</String>
+  <String Id="MaintenanceTypeDlgRemoveButton" Overridable="yes">&amp;Eltávolítás</String>
+  <String Id="MaintenanceTypeDlgRemoveButtonTooltip" Overridable="yes">Eltávolítás</String>
+  <String Id="MaintenanceTypeDlgBannerBitmap" Overridable="yes">WixUI_Bmp_Banner</String>
+  <String Id="MaintenanceTypeDlgDescription" Overridable="yes">Válasszon egy lehetőséget az alábbiak közül:</String>
+  <String Id="MaintenanceTypeDlgTitle" Overridable="yes">{\WixUI_Font_Title}A telepített termék módosítása, javítása vagy eltávolítása</String>
+  <String Id="MaintenanceTypeDlgChangeText" Overridable="yes">A [ProductName] telepítésének módosítása</String>
+  <String Id="MaintenanceTypeDlgChangeDisabledText" Overridable="yes">A [ProductName] programnak nincsenek kiválasztható lehetőségei.</String>
+  <String Id="MaintenanceTypeDlgRemoveText" Overridable="yes">A [ProductName] eltávolítása a számítógépről</String>
+  <String Id="MaintenanceTypeDlgRemoveDisabledText" Overridable="yes">A [ProductName] nem távolítható el a számítógépről.</String>
+  <String Id="MaintenanceTypeDlgRepairText" Overridable="yes">A [ProductName] hibáinak javítása, a hibás vagy sérült fájlok és adatok helyreállítása</String>
+  <String Id="MaintenanceTypeDlgRepairDisabledText" Overridable="yes">A [ProductName] hibáit nem lehet kijavítani.</String>
+
+  <String Id="MaintenanceWelcomeDlg_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="MaintenanceWelcomeDlgBitmap" Overridable="yes">WixUI_Bmp_Dialog</String>
+  <String Id="MaintenanceWelcomeDlgDescription" Overridable="yes">A varázslóval módosíthatja a [ProductName] telepítésének jellemzőit, de akár teljesen el is távolíthatja vele a terméket a számítógépéről.</String>
+  <String Id="MaintenanceWelcomeDlgTitle" Overridable="yes">{\WixUI_Font_Bigger}Üdvözli a [ProductName] telepítője!</String>
+
+  <String Id="MsiRMFilesInUse_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="MsiRMFilesInUseBannerBitmap" Overridable="yes">WixUI_Bmp_Banner</String>
+  <String Id="MsiRMFilesInUseText" Overridable="yes">A felsorolt alkalmazások olyan fájlokat tartanak használatban, amelyeket a telepítőnek ki kell cserélnie.</String>
+  <String Id="MsiRMFilesInUseDescription" Overridable="yes">Egyes kicserélendő fájlok használatban vannak.</String>
+  <String Id="MsiRMFilesInUseTitle" Overridable="yes">{\WixUI_Font_Title}Használatban levő fájlok</String>
+  <String Id="MsiRMFilesInUseUseRM" Overridable="yes">&amp;Zárja be az alkalmazásokat, és majd a telepítés lezajlása után indítsa őket újra.</String>
+  <String Id="MsiRMFilesInUseDontUseRM" Overridable="yes">&amp;Ne zárja be az alkamazásokat (a telepítés végén újra kell majd indítani a számítógépet).</String>
+
+  <String Id="OutOfDiskDlg_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="OutOfDiskDlgBannerBitmap" Overridable="yes">WixUI_Bmp_Banner</String>
+  <String Id="OutOfDiskDlgText" Overridable="yes">Több szabad lemezterületre van szükség a számítógépen a [ProductName] sikeres telepítéséhez. Szabadítson fel lemezterületet, majd kattintson az Ismét gombra.</String>
+  <String Id="OutOfDiskDlgDescription" Overridable="yes">A telepítéshez több szabad lemezterületre van szükség.</String>
+  <String Id="OutOfDiskDlgTitle" Overridable="yes">{\WixUI_Font_Title}Nincs elegendő szabad lemezterület.</String>
+  <String Id="OutOfDiskDlgVolumeList" Overridable="yes">{120}{70}{70}{70}{70}</String>
+
+  <String Id="OutOfRbDiskDlg_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="OutOfRbDiskDlgBannerBitmap" Overridable="yes">WixUI_Bmp_Banner</String>
+  <String Id="OutOfRbDiskDlgText" Overridable="yes">A kijelölt köteteken nincs a kiválasztott szolgáltatások telepítéséhez elegendő hely. Töröljön fájlokat, válasszon ki kevesebb szolgáltatást a helyi meghajtókra való telepítésre, vagy válasszon más célmeghajtókat.</String>
+  <String Id="OutOfRbDiskDlgDescription" Overridable="yes">Nincs a termék telepítéséhez elegendő hely a lemezen.</String>
+  <String Id="OutOfRbDiskDlgTitle" Overridable="yes">{\WixUI_Font_Title}Nincs elég hely</String>
+  <String Id="OutOfRbDiskDlgVolumeList" Overridable="yes">{120}{70}{70}{70}{70}</String>
+  <String Id="OutOfRbDiskDlgText2" Overridable="yes">Választhatja a telepítő visszaállító képességének kikapcsolását is. Ekkor azonban a telepítés félbeszakadása esetén a varázsló nem tudja visszaállítani számítógépét a megelőző állapotába. Kikapcsolja?</String>
+
+  <String Id="PrepareDlg_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="PrepareDlgBitmap" Overridable="yes">WixUI_Bmp_Dialog</String>
+  <String Id="PrepareDlgDescription" Overridable="yes">Kérjük, várja meg, míg a telepítővarázsló felkészül a telepítésre.</String>
+  <String Id="PrepareDlgTitle" Overridable="yes">{\WixUI_Font_Bigger}Üdvözli a [ProductName] telepítője!</String>
+
+  <String Id="ProgressDlg_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="ProgressDlgBannerBitmap" Overridable="yes">WixUI_Bmp_Banner</String>
+  <String Id="ProgressDlgTextInstalling" Overridable="yes">Kérjük, várjon, amíg a telepítővarázsló telepíti a [ProductName] programot.</String>
+  <String Id="ProgressDlgTitleInstalling" Overridable="yes">{\WixUI_Font_Title}A [ProductName] telepítése</String>
+  <String Id="ProgressDlgTextChanging" Overridable="yes">Kérjük, várjon, amíg a telepítővarázsló módosítja a [ProductName] programot.</String>
+  <String Id="ProgressDlgTitleChanging" Overridable="yes">{\WixUI_Font_Title}A [ProductName] módosítása</String>
+  <String Id="ProgressDlgTextRepairing" Overridable="yes">Kérjük, várjon, amíg a telepítővarázsló kijavítja a [ProductName] programot.</String>
+  <String Id="ProgressDlgTitleRepairing" Overridable="yes">{\WixUI_Font_Title}A [ProductName] kijavítása</String>
+  <String Id="ProgressDlgTextRemoving" Overridable="yes">Kérjük, várjon, amíg a telepítővarázsló eltávolítja a [ProductName] programot.</String>
+  <String Id="ProgressDlgTitleRemoving" Overridable="yes">{\WixUI_Font_Title}A [ProductName] eltávolítása</String>
+  <String Id="ProgressDlgProgressBar" Overridable="yes">A műveletből eddig befejezve:</String>
+  <String Id="ProgressDlgStatusLabel" Overridable="yes">Most:</String>
+
+  <String Id="ResumeDlg_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="ResumeDlgInstall" Overridable="yes">&amp;Telepítés</String>
+  <String Id="ResumeDlgBitmap" Overridable="yes">WixUI_Bmp_Dialog</String>
+  <String Id="ResumeDlgDescription" Overridable="yes">Ha a Telepítés gombra kattint, a varázsló befejezi a [ProductName] telepítését.</String>
+  <String Id="ResumeDlgTitle" Overridable="yes">{\WixUI_Font_Bigger}A [ProductName] telepítése folytatódik</String>
+
+  <String Id="SetupTypeDlg_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="SetupTypeDlgTypicalButton" Overridable="yes">&amp;Szokásos</String>
+  <String Id="SetupTypeDlgTypicalButtonTooltip" Overridable="yes">Szokásos telepítés</String>
+  <String Id="SetupTypeDlgCustomButton" Overridable="yes">&amp;Egyedi</String>
+  <String Id="SetupTypeDlgCustomButtonTooltip" Overridable="yes">Egyedi telepítés</String>
+  <String Id="SetupTypeDlgCompleteButton" Overridable="yes">&amp;Teljes</String>
+  <String Id="SetupTypeDlgCompleteButtonTooltip" Overridable="yes">Teljes telepítés</String>
+  <String Id="SetupTypeDlgBannerBitmap" Overridable="yes">WixUI_Bmp_Banner</String>
+  <String Id="SetupTypeDlgTitle" Overridable="yes">{\WixUI_Font_Title}Telepítés módja</String>
+  <String Id="SetupTypeDlgDescription" Overridable="yes">Válassza ki a tetszése szerinti telepítési módot.</String>
+  <String Id="SetupTypeDlgTypicalText" Overridable="yes">A program leggyakrabban szükséges részeit telepíteni (általában ajánlott).</String>
+  <String Id="SetupTypeDlgCustomText" Overridable="yes">A program egyes tartozékait a gyakorlott felhasználók maguk választhatják ki.</String>
+  <String Id="SetupTypeDlgCompleteText" Overridable="yes">A program minden tartozékát telepíteni (maximális lemezigény).</String>
+
+  <String Id="UserExit_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="UserExitBitmap" Overridable="yes">WixUI_Bmp_Dialog</String>
+  <String Id="UserExitTitle" Overridable="yes">{\WixUI_Font_Bigger}A [ProductName] telepítése nem sikerült.</String>
+  <String Id="UserExitDescription1" Overridable="yes">A rendszer nem módosult. A telepítés befejezéséhez futtassa újra a telepítőt.</String>
+  <String Id="UserExitDescription2" Overridable="yes">A varázslóból a Befejezés gombbal léphet ki.</String>
+
+  <String Id="VerifyReadyDlg_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="VerifyReadyDlgBannerBitmap" Overridable="yes">WixUI_Bmp_Banner</String>
+  <String Id="VerifyReadyDlgInstall" Overridable="yes">&amp;Telepítés</String>
+  <String Id="VerifyReadyDlgInstallText" Overridable="yes">A Telepítés megnyomása előtt még visszaléphet és változtathat az eddigi beállításokon. A Mégse félbeszakítja a telepítést.</String>
+  <String Id="VerifyReadyDlgInstallTitle" Overridable="yes">{\WixUI_Font_Title}Készen áll a telepítésre</String>
+  <String Id="VerifyReadyDlgChange" Overridable="yes">&amp;Módosítás</String>
+  <String Id="VerifyReadyDlgChangeText" Overridable="yes">Ha továbblép, módosítja a [ProductName] terméket. Még visszaléphet, hogy módosítson az eddigi beállításokon. A Mégse félbeszakítja a javítást.</String>
+  <String Id="VerifyReadyDlgChangeTitle" Overridable="yes">{\WixUI_Font_Title}A [ProductName] módosítása</String>
+  <String Id="VerifyReadyDlgRepair" Overridable="yes">&amp;Javítás</String>
+  <String Id="VerifyReadyDlgRepairText" Overridable="yes">Ha továbblép, kijavítja a [ProductName] terméket. Még visszaléphet, hogy módosítson az eddigi beállításokon. A Mégse félbeszakítja a javítást.</String>
+  <String Id="VerifyReadyDlgRepairTitle" Overridable="yes">{\WixUI_Font_Title}A [ProductName] kijavítása</String>
+  <String Id="VerifyReadyDlgRemove" Overridable="yes">&amp;Eltávolítás</String>
+  <String Id="VerifyReadyDlgRemoveText" Overridable="yes">Ha továbblép, eltávolítja a [ProductName] terméket. Még visszaléphet, hogy módosítson az eddigi beállításokon. A Kilép félbeszakítja az eltávolítást és a termék továbbra is a számítógépén marad.</String>
+  <String Id="VerifyReadyDlgRemoveTitle" Overridable="yes">{\WixUI_Font_Title}A [ProductName] eltávolítása</String>
+
+  <String Id="WaitForCostingDlg_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="WaitForCostingDlgReturn" Overridable="yes">&amp;Vissza</String>
+  <String Id="WaitForCostingDlgText" Overridable="yes">Kérjük, várja meg, amíg a telepítő felméri a telepítéshez szükséges lemezterületet.</String>
+  <String Id="WaitForCostingDlgIcon" Overridable="yes">WixUI_Ico_Exclam</String>
+  <String Id="WaitForCostingDlgIconTooltip" Overridable="yes">Ikon</String>
+
+  <String Id="WelcomeDlg_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="WelcomeDlgBitmap" Overridable="yes">WixUI_Bmp_Dialog</String>
+  <String Id="WelcomeDlgDescription" Overridable="yes">Ez a varázsló segít telepíteni a [ProductName] programot számítógépére. A folytatáshoz a Tovább gombra, a varázsló bezárásához a Mégse gombra kattintson.</String>
+  <String Id="WelcomeDlgTitle" Overridable="yes">{\WixUI_Font_Bigger}Üdvözli a [ProductName] telepítője!</String>
+
+  <String Id="WelcomeEulaDlg_Title" Overridable="yes">[ProductName] telepítése</String>
+  <String Id="WelcomeEulaDlgBitmap" Overridable="yes">WixUI_Bmp_Dialog</String>
+  <String Id="WelcomeEulaDlgLicenseAcceptedCheckBox" Overridable="yes">&amp;Elfogadom a licencszerződés feltételeit.</String>
+  <String Id="WelcomeEulaDlgInstall" Overridable="yes">&amp;Telepítés</String>
+  <String Id="WelcomeEulaDlgTitle" Overridable="yes">{\WixUI_Font_Title}Kérjük, olvassa el gondosan az alábbi licencszerződést.</String>
+
+  <String Id="ProgressTextAdvertise" Overridable="yes">Alkalmazás közzététele</String>
+  <String Id="ProgressTextAllocateRegistrySpace" Overridable="yes">Rendszerleíró adatbázis helyének kijelölése</String>
+  <String Id="ProgressTextAllocateRegistrySpaceTemplate" Overridable="yes">Szabad lemezterület: [1]</String>
+  <String Id="ProgressTextAppSearch" Overridable="yes">Telepített alkalmazások keresése</String>
+  <String Id="ProgressTextAppSearchTemplate" Overridable="yes">Tulajdonság: [1], Aláírás: [2]</String>
+  <String Id="ProgressTextBindImage" Overridable="yes">Programok kötése</String>
+  <String Id="ProgressTextBindImageTemplate" Overridable="yes">Fájl: [1]</String>
+  <String Id="ProgressTextCCPSearch" Overridable="yes">Minősítő termékek keresése</String>
+  <String Id="ProgressTextCostFinalize" Overridable="yes">A szükséges terület kiszámítása</String>
+  <String Id="ProgressTextCostInitialize" Overridable="yes">A szükséges terület kiszámítása</String>
+  <String Id="ProgressTextCreateFolders" Overridable="yes">Mappák létrehozása</String>
+  <String Id="ProgressTextCreateFoldersTemplate" Overridable="yes">Mappa: [1]</String>
+  <String Id="ProgressTextCreateShortcuts" Overridable="yes">Parancsikonok létrehozása</String>
+  <String Id="ProgressTextCreateShortcutsTemplate" Overridable="yes">Parancsikon: [1]</String>
+  <String Id="ProgressTextDeleteServices" Overridable="yes">Szolgáltatások törlése</String>
+  <String Id="ProgressTextDeleteServicesTemplate" Overridable="yes">Szolgáltatás: [1]</String>
+  <String Id="ProgressTextDuplicateFiles" Overridable="yes">Másolatfájlok létrehozása</String>
+  <String Id="ProgressTextDuplicateFilesTemplate" Overridable="yes">Fájl: [1], Könyvtár: [9], Méret: [6]</String>
+  <String Id="ProgressTextFileCost" Overridable="yes">A szükséges terület kiszámítása</String>
+  <String Id="ProgressTextFindRelatedProducts" Overridable="yes">Kapcsolódó alkalmazások keresése.</String>
+  <String Id="ProgressTextFindRelatedProductsTemplate" Overridable="yes">Talált alkalmazás: [1]</String>
+  <String Id="ProgressTextGenerateScript" Overridable="yes">Parancsfájlműveletek generálása a következő művelethez:</String>
+  <String Id="ProgressTextGenerateScriptTemplate" Overridable="yes">[1]</String>
+  <String Id="ProgressTextInstallAdminPackage" Overridable="yes">Hálózati telepítőfájlok másolása</String>
+  <String Id="ProgressTextInstallAdminPackageTemplate" Overridable="yes">Fájl: [1], Könyvtár: [9], Méret: [6]</String>
+  <String Id="ProgressTextInstallFiles" Overridable="yes">Új fájlok másolása</String>
+  <String Id="ProgressTextInstallFilesTemplate" Overridable="yes">Fájl: [1], Könyvtár: [9], Méret: [6]</String>
+  <String Id="ProgressTextInstallODBC" Overridable="yes">Az ODBC-összetevők telepítése</String>
+  <String Id="ProgressTextInstallServices" Overridable="yes">Új szolgáltatások telepítése</String>
+  <String Id="ProgressTextInstallServicesTemplate" Overridable="yes">Szolgáltatás: [2]</String>
+  <String Id="ProgressTextInstallSFPCatalogFile" Overridable="yes">A rendszerkatalógus telepítéste</String>
+  <String Id="ProgressTextInstallSFPCatalogFileTemplate" Overridable="yes">Fájl: [1], függőségek: [2]</String>
+  <String Id="ProgressTextInstallValidate" Overridable="yes">A telepítés érvényesítése</String>
+  <String Id="ProgressTextLaunchConditions" Overridable="yes">Az indítási feltételek értékelése</String>
+  <String Id="ProgressTextMigrateFeatureStates" Overridable="yes">Szolgáltatások áttelepítése kapcsolódó alkalmazásokból.</String>
+  <String Id="ProgressTextMigrateFeatureStatesTemplate" Overridable="yes">Alkalmazás: [1]</String>
+  <String Id="ProgressTextMoveFiles" Overridable="yes">Fájlok áthelyezése</String>
+  <String Id="ProgressTextMoveFilesTemplate" Overridable="yes">Fájl: [1], Könyvtár: [9], Méret: [6]</String>
+  <String Id="ProgressTextMsiPublishAssemblies" Overridable="yes">Az összeállítási információk közzététele</String>
+  <String Id="ProgressTextMsiPublishAssembliesTemplate" Overridable="yes">Alkalmazás kontextusa:[1], összeállítás neve:[2]</String>
+  <String Id="ProgressTextMsiUnpublishAssemblies" Overridable="yes">Az összeállítási információk közzétételének megszüntetése</String>
+  <String Id="ProgressTextMsiUnpublishAssembliesTemplate" Overridable="yes">Alkalmazás kontextusa:[1], összeállítás neve:[2]</String>
+  <String Id="ProgressTextPatchFiles" Overridable="yes">Fájlok javítása</String>
+  <String Id="ProgressTextPatchFilesTemplate" Overridable="yes">Fájl: [1], Könyvtár: [2], Méret: [3]</String>
+  <String Id="ProgressTextProcessComponents" Overridable="yes">Összetevők regisztrációjának frissítése</String>
+  <String Id="ProgressTextPublishComponents" Overridable="yes">Minősített összetevők közzététele</String>
+  <String Id="ProgressTextPublishComponentsTemplate" Overridable="yes">Összetevőazonosító: [1], Minősítésjelző: [2]</String>
+  <String Id="ProgressTextPublishFeatures" Overridable="yes">A termék szolgáltatásainak közzététele</String>
+  <String Id="ProgressTextPublishFeaturesTemplate" Overridable="yes">Szolgáltatás: [1]</String>
+  <String Id="ProgressTextPublishProduct" Overridable="yes">A termék adatainak közzététele</String>
+  <String Id="ProgressTextRegisterClassInfo" Overridable="yes">Az osztálykiszolgálók regisztrációja</String>
+  <String Id="ProgressTextRegisterClassInfoTemplate" Overridable="yes">Class Id: [1]</String>
+  <String Id="ProgressTextRegisterComPlus" Overridable="yes">COM+ alkalmazások és összetevők regisztrálása</String>
+  <String Id="ProgressTextRegisterComPlusTemplate" Overridable="yes">Alk.: [1]{{, Alk. típus: [2], Felhasználók: [3], Sorozatszám: [4]}}</String>
+  <String Id="ProgressTextRegisterExtensionInfo" Overridable="yes">A kiterjesztéskiszolgálók regisztrációja</String>
+  <String Id="ProgressTextRegisterExtensionInfoTemplate" Overridable="yes">Kiterjesztés: [1]</String>
+  <String Id="ProgressTextRegisterFonts" Overridable="yes">Betűtípusok regisztrációja</String>
+  <String Id="ProgressTextRegisterFontsTemplate" Overridable="yes">Betűtípus: [1]</String>
+  <String Id="ProgressTextRegisterMIMEInfo" Overridable="yes">A MIME-információ regisztrálása</String>
+  <String Id="ProgressTextRegisterMIMEInfoTemplate" Overridable="yes">A MIME-tartalom típusa: [1], Kiterjesztés: [2]</String>
+  <String Id="ProgressTextRegisterProduct" Overridable="yes">A termék regisztrálása</String>
+  <String Id="ProgressTextRegisterProductTemplate" Overridable="yes">[1]</String>
+  <String Id="ProgressTextRegisterProgIdInfo" Overridable="yes">Programazonosítók regisztrációja</String>
+  <String Id="ProgressTextRegisterProgIdInfoTemplate" Overridable="yes">ProgId: [1]</String>
+  <String Id="ProgressTextRegisterTypeLibraries" Overridable="yes">A típustárak regisztrációja</String>
+  <String Id="ProgressTextRegisterTypeLibrariesTemplate" Overridable="yes">Típustár-azonosító: [1]</String>
+  <String Id="ProgressTextRegisterUser" Overridable="yes">A felhasználó regisztrációja</String>
+  <String Id="ProgressTextRegisterUserTemplate" Overridable="yes">[1]</String>
+  <String Id="ProgressTextRemoveDuplicateFiles" Overridable="yes">A fájlok másodpéldányainak eltávolítása</String>
+  <String Id="ProgressTextRemoveDuplicateFilesTemplate" Overridable="yes">Fájl: [1], Könyvtár: [9]</String>
+  <String Id="ProgressTextRemoveEnvironmentStrings" Overridable="yes">A környezeti karakterláncok frissítése</String>
+  <String Id="ProgressTextRemoveEnvironmentStringsTemplate" Overridable="yes">Név: [1], Érték: [2], Művelet [3]</String>
+  <String Id="ProgressTextRemoveExistingProducts" Overridable="yes">Alkalmazások eltávolítása.</String>
+  <String Id="ProgressTextRemoveExistingProductsTemplate" Overridable="yes">Alkalmazás: [1], Parancssor: [2]</String>
+  <String Id="ProgressTextRemoveFiles" Overridable="yes">Fájlok eltávolítása</String>
+  <String Id="ProgressTextRemoveFilesTemplate" Overridable="yes">Fájl: [1], Könyvtár: [9]</String>
+  <String Id="ProgressTextRemoveFolders" Overridable="yes">Mappák eltávolítása</String>
+  <String Id="ProgressTextRemoveFoldersTemplate" Overridable="yes">Mappa: [1]</String>
+  <String Id="ProgressTextRemoveIniValues" Overridable="yes">Az INI fájlok elemeinek eltávolítása</String>
+  <String Id="ProgressTextRemoveIniValuesTemplate" Overridable="yes">Fájl: [1], Szakasz: [2], Kulcs: [3], Érték: [4]</String>
+  <String Id="ProgressTextRemoveODBC" Overridable="yes">Az ODBC-összetevők eltávolítása</String>
+  <String Id="ProgressTextRemoveRegistryValues" Overridable="yes">Értékek eltávolítása a rendszerleíró adatbázisból</String>
+  <String Id="ProgressTextRemoveRegistryValuesTemplate" Overridable="yes">Kulcs: [1], Név: [2]</String>
+  <String Id="ProgressTextRemoveShortcuts" Overridable="yes">Parancsikonok eltávolítása</String>
+  <String Id="ProgressTextRemoveShortcutsTemplate" Overridable="yes">Parancsikon: [1]</String>
+  <String Id="ProgressTextRMCCPSearch" Overridable="yes">Minősítő termékek keresése</String>
+  <String Id="ProgressTextRollback" Overridable="yes">Visszaállítás:</String>
+  <String Id="ProgressTextRollbackTemplate" Overridable="yes">[1]</String>
+  <String Id="ProgressTextRollbackCleanup" Overridable="yes">A biztonsági másolatok eltávolítása</String>
+  <String Id="ProgressTextRollbackCleanupTemplate" Overridable="yes">Fájl: [1]</String>
+  <String Id="ProgressTextSelfRegModules" Overridable="yes">A modulok regisztrálása</String>
+  <String Id="ProgressTextSelfRegModulesTemplate" Overridable="yes">Fájl: [1], Mappa: [2]</String>
+  <String Id="ProgressTextSelfUnregModules" Overridable="yes">A modulok regisztrációjának törlése</String>
+  <String Id="ProgressTextSelfUnregModulesTemplate" Overridable="yes">Fájl: [1], Mappa: [2]</String>
+  <String Id="ProgressTextSetODBCFolders" Overridable="yes">Az ODBC-könyvtárak inicializálása</String>
+  <String Id="ProgressTextStartServices" Overridable="yes">Szolgáltatások elindítása</String>
+  <String Id="ProgressTextStartServicesTemplate" Overridable="yes">Szolgáltatás: [1]</String>
+  <String Id="ProgressTextStopServices" Overridable="yes">Szolgáltatások leállítása</String>
+  <String Id="ProgressTextStopServicesTemplate" Overridable="yes">Szolgáltatás: [1]</String>
+  <String Id="ProgressTextUnmoveFiles" Overridable="yes">Az áthelyezett fájlok eltávolítása</String>
+  <String Id="ProgressTextUnmoveFilesTemplate" Overridable="yes">Fájl: [1], Könyvtár: [9]</String>
+  <String Id="ProgressTextUnpublishComponents" Overridable="yes">A minősített összetevők közzétételének visszavonása</String>
+  <String Id="ProgressTextUnpublishComponentsTemplate" Overridable="yes">Összetevőazonosító: [1], Minősítésjelző: [2]</String>
+  <String Id="ProgressTextUnpublishFeatures" Overridable="yes">A termékszolgáltatások közzétételének visszavonása</String>
+  <String Id="ProgressTextUnpublishFeaturesTemplate" Overridable="yes">Szolgáltatás: [1]</String>
+  <String Id="ProgressTextUnpublishProduct" Overridable="yes">A termékadatok közzétételének visszavonása</String>
+  <String Id="ProgressTextUnregisterClassInfo" Overridable="yes">Az osztálykiszolgálók regisztrációjának törlése </String>
+  <String Id="ProgressTextUnregisterClassInfoTemplate" Overridable="yes">Class Id: [1]</String>
+  <String Id="ProgressTextUnregisterComPlus" Overridable="yes">A COM+ alkalmazások és összetevők regisztrációjának törlése</String>
+  <String Id="ProgressTextUnregisterComPlusTemplate" Overridable="yes">Alk.: [1]{{, Alk. típus: [2]}}</String>
+  <String Id="ProgressTextUnregisterExtensionInfo" Overridable="yes">A kiterjesztéskiszolgálók regisztrációjának törlése</String>
+  <String Id="ProgressTextUnregisterExtensionInfoTemplate" Overridable="yes">Kiterjesztés: [1]</String>
+  <String Id="ProgressTextUnregisterFonts" Overridable="yes">A betűtípusok regisztrációjának visszavonása</String>
+  <String Id="ProgressTextUnregisterFontsTemplate" Overridable="yes">Betűtípus: [1]</String>
+  <String Id="ProgressTextUnregisterMIMEInfo" Overridable="yes">A MIME-információ regisztrációjának visszavonása</String>
+  <String Id="ProgressTextUnregisterMIMEInfoTemplate" Overridable="yes">A MIME-tartalom típusa: [1], Kiterjesztés: [2]</String>
+  <String Id="ProgressTextUnregisterProgIdInfo" Overridable="yes">A programazonosítók regisztrációjának törlése</String>
+  <String Id="ProgressTextUnregisterProgIdInfoTemplate" Overridable="yes">ProgId: [1]</String>
+  <String Id="ProgressTextUnregisterTypeLibraries" Overridable="yes">A típustárak regisztrációjának visszavonása</String>
+  <String Id="ProgressTextUnregisterTypeLibrariesTemplate" Overridable="yes">LibID: [1]</String>
+  <String Id="ProgressTextWriteEnvironmentStrings" Overridable="yes">A környezeti karakterláncok frissítése</String>
+  <String Id="ProgressTextWriteEnvironmentStringsTemplate" Overridable="yes">Név: [1], Érték: [2], Művelet [3]</String>
+  <String Id="ProgressTextWriteIniValues" Overridable="yes">Az INI-fájlok értékeinek írása</String>
+  <String Id="ProgressTextWriteIniValuesTemplate" Overridable="yes">Fájl: [1], Szakasz: [2], Kulcs: [3], Érték: [4]</String>
+  <String Id="ProgressTextWriteRegistryValues" Overridable="yes">A rendszerleíró értékek írása</String>
+  <String Id="ProgressTextWriteRegistryValuesTemplate" Overridable="yes">Kulcs: [1], Név: [2], Érték: [3]</String>
+
+  <String Id="Error0" Overridable="yes">{{Súlyos hiba: }}</String>
+  <String Id="Error1" Overridable="yes">{{Hiba: [1]. }}</String>
+  <String Id="Error2" Overridable="yes">Figyelmeztetés: [1]. </String>
+  <String Id="Error4" Overridable="yes">Információ: [1]. </String>
+  <String Id="Error5" Overridable="yes">A telepítő váratlan hibába ütközött a csomag telepítése közben. Ezt a csomag hibája is okozhatja. A hibakód: [1]. {{A paraméterek: [2], [3], [4]}}</String>
+  <String Id="Error7" Overridable="yes">{{A lemez megtelt: }}</String>
+  <String Id="Error8" Overridable="yes">Művelet [Time]: [1]. [2]</String>
+  <String Id="Error9" Overridable="yes">[ProductName]</String>
+  <String Id="Error10" Overridable="yes">{[2]}{, [3]}{, [4]}</String>
+  <String Id="Error11" Overridable="yes">Üzenet típusa: [1], Argumentum: [2]</String>
+  <String Id="Error12" Overridable="yes">=== Naplózás kezdete: [Date] [Time] ===</String>
+  <String Id="Error13" Overridable="yes">=== Naplózás vége: [Date] [Time] ===</String>
+  <String Id="Error14" Overridable="yes">A művelet elkezdődött: [Time]: [1].</String>
+  <String Id="Error15" Overridable="yes">A művelet befejeződött: [Time]: [1]. Visszatérési érték: [2].</String>
+  <String Id="Error16" Overridable="yes">Hátralévő idő: {[1] perc }{[2] másodperc}</String>
+  <String Id="Error17" Overridable="yes">Kevés a memória. Zárjon be minden egyéb alkalmazást, mielőtt ismét megpróbálja.</String>
+  <String Id="Error18" Overridable="yes">A telepítő nem válaszol.</String>
+  <String Id="Error19" Overridable="yes">A telepítő futása a vártnál korábban fejeződött be.</String>
+  <String Id="Error20" Overridable="yes">Kis türelmet, a Windows a(z) [ProductName] konfigurálását végzi.</String>
+  <String Id="Error21" Overridable="yes">A kért adatok összegyűjtése…</String>
+  <String Id="Error22" Overridable="yes">Az alkalmazás régebbi verzióinak eltávolítása…</String>
+  <String Id="Error23" Overridable="yes">Az alkalmazás régebbi verzióinak eltávolítása következik…</String>
+  <String Id="Error32" Overridable="yes">A {[ProductName] }telepítése sikeresen befejeződött.</String>
+  <String Id="Error33" Overridable="yes">A {[ProductName] }telepítése nem sikerült.</String>
+  <String Id="Error1101" Overridable="yes">Hiba a [2] fájl olvasásakor. {{ Rendszerhiba [3].}} Ellenőrizze, hogy a fájl létezik-e, és hogy van-e hozzáférési engedélye.</String>
+  <String Id="Error1301" Overridable="yes">A(z) [2] fájlt nem lehet létrehozni, mert ilyen nevű könyvtár már létezik. Szakítsa meg a telepítést, és próbáljon meg egy másik helyre telepíteni.</String>
+  <String Id="Error1302" Overridable="yes">Helyezze be a [2] lemezt.</String>
+  <String Id="Error1303" Overridable="yes">A telepítőnek nem elegendő a jogosultsága a [2] könyvtár megnyitásához, ezért a telepítés nem folytatható. Jelentkezzen be rendszergazdaként, vagy forduljon a rendszergazdához.</String>
+  <String Id="Error1304" Overridable="yes">Hiba a(z) [2] fájl írásakor. Ellenőrizze, hogy van-e hozzáférési engedélye a könyvtárhoz.</String>
+  <String Id="Error1305" Overridable="yes">Hiba a(z) [2] fájl olvasásakor. {{ Rendszerhiba: [3].}} Ellenőrizze, hogy a fájl létezik-e, és hogy van-e hozzáférési engedélye.</String>
+  <String Id="Error1306" Overridable="yes">Másik alkalmazásnak kizárólagos hozzáférése van a(z) [2] fájlhoz. Zárjon be minden más alkalmazást, és kattintson az Ismét gombra.</String>
+  <String Id="Error1307" Overridable="yes">A lemezen nincs elég hely a(z) [2] fájl telepítéséhez. Tegyen szabaddá több helyet a lemezen, és kattintson az Ismét gombra, vagy kattintson a Mégse gombra a kilépéshez.</String>
+  <String Id="Error1308" Overridable="yes">A(z) [2] forrásfájl nem található. Ellenőrizze, hogy a fájl létezik-e, és hogy van-e hozzáférési engedélye.</String>
+  <String Id="Error1309" Overridable="yes">Hiba a(z) [3] fájl olvasásakor. {{ Rendszerhiba [2].}} Ellenőrizze, hogy a fájl létezik-e, és hogy van-e hozzáférési engedélye.</String>
+  <String Id="Error1310" Overridable="yes">Hiba a(z) [3] fájl írásakor. {{ Rendszerhiba [2].}} Ellenőrizze, hogy van-e hozzáférési engedélye a könyvtárhoz.</String>
+  <String Id="Error1311" Overridable="yes">A(z) [2] forrásfájl {{(gyűjtőfájl)}} nem található. Ellenőrizze, hogy a fájl létezik-e, és hogy van-e hozzáférési engedélye.</String>
+  <String Id="Error1312" Overridable="yes">A(z) [2] könyvtárat nem lehet létrehozni. Ezzel a névvel már létezik egy fájl. Törölje vagy nevezze át a fájlt, és kattintson az Ismét gombra, vagy kattintson a Mégse gombra a kilépéshez.</String>
+  <String Id="Error1313" Overridable="yes">A(z) [2] kötet jelenleg nem érhető el. Válasszon másik kötetet.</String>
+  <String Id="Error1314" Overridable="yes">A megadott elérési út ([2]) nem érhető el.</String>
+  <String Id="Error1315" Overridable="yes">Nem sikerült írni a [2] mappába.</String>
+  <String Id="Error1316" Overridable="yes">A(z) [2] fájl olvasásakor hálózati hiba történt.</String>
+  <String Id="Error1317" Overridable="yes">Hiba történt a [2] könyvtár létrehozásakor.</String>
+  <String Id="Error1318" Overridable="yes">Hálózati hiba történt a [2] könyvtár létrehozásakor.</String>
+  <String Id="Error1319" Overridable="yes">Hálózati hiba történt a forrásként szolgáló [2] gyűjtőfájl megnyitásakor.</String>
+  <String Id="Error1320" Overridable="yes">A megadott elérési út túl hosszú: [2]</String>
+  <String Id="Error1321" Overridable="yes">A telepítő nem rendelkezik megfelelő jogosultsággal a [2] fájl módosításához.</String>
+  <String Id="Error1322" Overridable="yes">A [2] mappa elérési útjának az egyik része érvénytelen. Üres, vagy meghaladja a rendszer által engedélyezett hosszúságot.</String>
+  <String Id="Error1323" Overridable="yes">A [2] mappa elérési útja olyan szavakat tartalmaz, amelyek nem érvényesek a mappák elérési útjaiban.</String>
+  <String Id="Error1324" Overridable="yes">A [2] mappa elérési útja érvénytelen karaktert tartalmaz.</String>
+  <String Id="Error1325" Overridable="yes">A(z) [2] rövid fájlnév nem érvényes.</String>
+  <String Id="Error1326" Overridable="yes">Hiba a fájl adatvédelmi adatainak fogadásakor: [3]. GetLastError: [2]</String>
+  <String Id="Error1327" Overridable="yes">A [2] meghajtó érvénytelen.</String>
+  <String Id="Error1328" Overridable="yes">Hiba történt a [2] fájlra alkalmazott javítás során. Valószínűleg már frissítve lett valamilyen módon, így már nem frissíthető ezzel a javítócsomaggal. További információért forduljon a javítócsomag forgalmazójához. {{Rendszerhiba: [3]}}</String>
+  <String Id="Error1329" Overridable="yes">Egy szükséges fájlt nem lehetett telepíteni, mert a [2] kabinetfájl nincs digitálisan aláírva. Lehetséges, hogy a fájl megsérült.</String>
+  <String Id="Error1330" Overridable="yes">Egy szükséges fájlt nem lehetett telepíteni, mert a [2] kabinetfájl digitális aláírása érvénytelen. Lehetséges, hogy a fájl megsérült. {{ A WinVerifyTrust által visszaadott hiba: [3].}}</String>
+  <String Id="Error1331" Overridable="yes">CRC-hiba miatt nem lehetett másolni a [2] fájlt.</String>
+  <String Id="Error1332" Overridable="yes">CRC-hiba miatt nem lehetett áthelyezni a [2] fájlt.</String>
+  <String Id="Error1333" Overridable="yes">CRC-hiba miatt nem lehetett javítani a [2] fájlt.</String>
+  <String Id="Error1334" Overridable="yes">A [2] fájlt nem lehet telepíteni, mert nem található a [3] kabinetfájlban. Oka lehet a hálózat, a cédé vagy a csomag hibája.</String>
+  <String Id="Error1335" Overridable="yes">A telepítéshez szükséges [2] kabinetfájl sérült és használhatatlan. Oka lehet a hálózat, a cédé vagy a csomag hibája.</String>
+  <String Id="Error1336" Overridable="yes">Hiba történt a telepítés befejezéséhez szükséges ideiglenes fájl létrehozása közben.{{ Mappa: [3]. A rendszerhiba kódja: [2]}}</String>
+  <String Id="Error1401" Overridable="yes">A [2] kulcsot nem lehet létrehozni. {{ Rendszerhiba [3].}} Ellenőrizze, hogy rendelkezik-e elegendő hozzáférési joggal a kulcshoz, vagy forduljon a technikusokhoz. </String>
+  <String Id="Error1402" Overridable="yes">A [2] kulcsot nem sikerült megnyitni. {{ Rendszerhiba [3].}} Ellenőrizze, hogy rendelkezik-e elegendő hozzáférési joggal a kulcshoz, vagy forduljon a technikusokhoz. </String>
+  <String Id="Error1403" Overridable="yes">A(z) [3] kulcsból nem sikerült törölni a(z) [2] értéket. {{ Rendszerhiba [4].}} Ellenőrizze, hogy rendelkezik-e elegendő hozzáférési joggal a kulcshoz, vagy forduljon a technikusokhoz. </String>
+  <String Id="Error1404" Overridable="yes">A(z) [2] kulcsot nem sikerült törölni. {{ Rendszerhiba [3].}} Ellenőrizze, hogy rendelkezik-e elegendő hozzáférési joggal a kulcshoz, vagy forduljon a technikusokhoz. </String>
+  <String Id="Error1405" Overridable="yes">A(z) [3] kulcsban a(z) [2] érték nem olvasható. {{ Rendszerhiba [4].}} Ellenőrizze, hogy rendelkezik-e elegendő hozzáférési joggal a kulcshoz, vagy forduljon a technikusokhoz. </String>
+  <String Id="Error1406" Overridable="yes">A(z) [2] értéket nem sikerült beírni a(z) [3] kulcsba. {{ Rendszerhiba [4].}} Ellenőrizze, hogy rendelkezik-e elegendő hozzáférési joggal a kulcshoz, vagy forduljon a technikusokhoz.</String>
+  <String Id="Error1407" Overridable="yes">Nem sikerült a(z) [2] kulcshoz tartozó értékneveket betölteni. {{ Rendszerhiba [3].}} Ellenőrizze, hogy rendelkezik-e elegendő hozzáférési joggal a kulcshoz, vagy forduljon a technikusokhoz.</String>
+  <String Id="Error1408" Overridable="yes">Nem sikerült a(z) [2] kulcshoz tartozó alkulcsokat betölteni. {{ Rendszerhiba [3].}} Ellenőrizze, hogy rendelkezik-e elegendő hozzáférési joggal a kulcshoz, vagy forduljon a technikusokhoz.</String>
+  <String Id="Error1409" Overridable="yes">A(z) [2] kulcshoz tartozó adatbiztonsági információ beolvasása nem sikerült. {{ Rendszerhiba [3].}} Ellenőrizze, hogy rendelkezik-e elegendő hozzáférési joggal a kulcshoz, vagy forduljon a technikusokhoz.</String>
+  <String Id="Error1410" Overridable="yes">Nem sikerült növelni a regisztrációs helyet. Ennek az alkalmazásnak a telepítéséhez [2] KB szabad regisztrációs hely szükséges.</String>
+  <String Id="Error1500" Overridable="yes">Egy másik telepítés folyamatban van. Előbb be kell fejezni a másik telepítést, mielőtt ezt folytathatná.</String>
+  <String Id="Error1501" Overridable="yes">Hiba a biztonságos adat elérésekor. Ellenőrizze, hogy a Windows Installer megfelelően van-e telepítve, és próbálkozzon újra a telepítéssel.</String>
+  <String Id="Error1502" Overridable="yes">Egy másik felhasználó ([2]) korábban már megkezdte a(z) [3] termék telepítését. Neki a termék használatához újra kell majd indítani a telepítést. A jelenlegi telepítés most folytatódni fog.</String>
+  <String Id="Error1503" Overridable="yes">Egy másik felhasználó ([2]) korábban már megkezdte a(z) [3] termék telepítését. Neki a termék használatához újra kell majd indítani a telepítést.</String>
+  <String Id="Error1601" Overridable="yes">Nincs elég hely a lemezen -- Kötet: [2]; szükséges hely: [3] KB; rendelkezésre álló hely: [4] KB. Tegyen szabaddá több helyet a lemezen, és próbálkozzon újra.</String>
+  <String Id="Error1602" Overridable="yes">Biztos, hogy megszakítja a telepítést?</String>
+  <String Id="Error1603" Overridable="yes">A(z) [2][3] fájl éppen használatban van{, a következő alkalmazás használja: Név: [4], Azonosító: [5], Ablak neve: [6]}. Zárja be az alkalmazást, és próbálkozzon újra.</String>
+  <String Id="Error1604" Overridable="yes">Az előzőleg már telepített [2] termék megakadályozza ennek a terméknek a telepítését. A két termék nem kompatibilis egymással.</String>
+  <String Id="Error1605" Overridable="yes">Nincs elég hely a [2] köteten a telepítés visszaállítási lehetőséggel való folytatásához. [3] kilobájtra van szükség, de csak [4] KB áll rendelkezésre. A visszaállítási információk mentése nélküli telepítés folytatásához kattintson a Kihagyás, a szabad hely ellenőrzéséhez az Ismét, a telepítésből való kilépéshez pedig a Mégse gombra.</String>
+  <String Id="Error1606" Overridable="yes">A [2] hálózati helyet nem sikerült elérni.</String>
+  <String Id="Error1607" Overridable="yes">A telepítés folytatásához be kell zárni a következő alkalmazást:</String>
+  <String Id="Error1608" Overridable="yes">A gépen nem található olyan, korábban már telepített egyéb termék, amely ehhez a termékhez szükséges.</String>
+  <String Id="Error1609" Overridable="yes">Hiba történt a biztonsági beállítások alkalmazása közben. [2] nem érvényes felhasználó vagy csoport. Ez lehet a csomag hibája, vagy probléma a hálózati tartományvezérlőhöz való kapcsolódással. Ellenőrizze a hálózati kapcsolatot, majd kattintson az Ismét, a telepítés befejezéséhez pedig a Mégse gombra. {{A felhasználó helyazonosítója nem található, rendszerhiba: [3]}}</String>
+  <String Id="Error1701" Overridable="yes">A(z) [2] kulcs nem érvényes. Ellenőrizze, hogy a megfelelő kulcsot adta-e meg.</String>
+  <String Id="Error1702" Overridable="yes">A telepítőnek újra kell indítania a rendszert, mielőtt a [2] konfigurálása folytatódik. Kattintson az Igen gombra, ha most szeretné újraindítani a rendszert, vagy a Nem gombra, ha később.</String>
+  <String Id="Error1703" Overridable="yes">Újra kell indítania a rendszert, hogy a(z) [2] konfigurálásának változásai életbe lépjenek. Kattintson az Igen gombra, ha most szeretné újraindítani a rendszert, vagy a Nem gombra, ha később.</String>
+  <String Id="Error1704" Overridable="yes">A(z) [2] telepítése jelenleg fel van függesztve. A folytatáshoz vissza kell vonnia a telepítés alatt tett változtatásokat. Vissza kívánja vonni a változtatásokat?</String>
+  <String Id="Error1705" Overridable="yes">A termék egy korábbi telepítése már folyamatban van. A folytatáshoz vissza kell vonnia azokat a változtatásokat, amelyek a másik telepítés alatt történtek. Vissza kívánja vonni a változtatásokat?</String>
+  <String Id="Error1706" Overridable="yes">A(z) [2] termék telepítéséhez nem sikerült telepítőcsomagot találni. Próbálja meg újra lefuttatni a telepítést érvényes [3] telepítőcsomaggal.</String>
+  <String Id="Error1707" Overridable="yes">A telepítés sikeresen befejeződött.</String>
+  <String Id="Error1708" Overridable="yes">A telepítés nem sikerült.</String>
+  <String Id="Error1709" Overridable="yes">Termék: [2] -- [3]</String>
+  <String Id="Error1710" Overridable="yes">Visszaállíthatja a számítógép előző állapotát, vagy később folytathatja is a telepítést. Vissza kívánja állítani az előző állapotot?</String>
+  <String Id="Error1711" Overridable="yes">Hiba történt a telepítési adatok lemezre írásakor. Ellenőrizze, hogy a lemezen van-e elég hely, és kattintson az Ismét gombra, vagy kattintson a Mégse gombra a telepítés befejezéséhez.</String>
+  <String Id="Error1712" Overridable="yes">A számítógép előző állapotának visszaállításához szükséges fájlok némelyike nem található. A visszaállítás nem lehetséges.</String>
+  <String Id="Error1713" Overridable="yes">A(z) [2] nem tudja telepíteni az egyik szükséges terméket. Forduljon a technikusokhoz. {{Rendszerhiba: [3].}}</String>
+  <String Id="Error1714" Overridable="yes">Nem lehet eltávolítani a(z) [2] régebbi verzióját. Forduljon a technikusokhoz. {{Rendszerhiba: [3].}}</String>
+  <String Id="Error1715" Overridable="yes">Telepítve: [2]</String>
+  <String Id="Error1716" Overridable="yes">Konfigurálva: [2]</String>
+  <String Id="Error1717" Overridable="yes">Eltávolítva: [2]</String>
+  <String Id="Error1718" Overridable="yes">A fájlt ([2]) a digitális aláírás házirendje visszautasította.</String>
+  <String Id="Error1719" Overridable="yes">Nem lehetett hozzáférni a Windows Installer szolgáltatáshoz. Ez akkor fordulhat elő, ha a Windowst csökkentett üzemmódban futtatja, vagy, ha a Windows Installer nincs helyesen telepítve. Segítségért lépjen kapcsolatba a támogató technikusokkal.</String>
+  <String Id="Error1720" Overridable="yes">Probléma van a Windows Installer csomaggal. A telepítéshez szükséges egyik parancsfájl nem futtatható. Lépjen kapcsolatba a támogató személyzettel vagy a csomag eladójával. {{Egyéni művelet: [2], parancsfájlhiba: [3], [4]: [5] sor: [6], oszlop: [7], [8] }}</String>
+  <String Id="Error1721" Overridable="yes">Probléma van a Windows Installer csomaggal. A telepítéshez szükséges egyik program nem futtatható. Lépjen kapcsolatba a támogató személyzettel vagy a csomag eladójával. {{művelet: [2], hely: [3], parancs: [4] }}</String>
+  <String Id="Error1722" Overridable="yes">Probléma van a Windows Installer csomaggal. A telepítés egyik részeként futó program nem az elvárásoknak megfelelően ért véget. Lépjen kapcsolatba a támogató személyzettel vagy a csomag eladójával. {{ művelet [2], hely: [3], parancs: [4] }}</String>
+  <String Id="Error1723" Overridable="yes">Probléma van a Windows Installer csomaggal. A telepítéshez szükséges egyik DLL nem futtatható. Lépjen kapcsolatba a támogató személyzettel vagy a csomag eladójával. {{ művelet [2], bejegyzés: [3], függvénytár: [4] }}</String>
+  <String Id="Error1724" Overridable="yes">Az eltávolítás sikeresen megtörtént.</String>
+  <String Id="Error1725" Overridable="yes">Az eltávolítás nem sikerült.</String>
+  <String Id="Error1726" Overridable="yes">A közzététel sikeresen megtörtént.</String>
+  <String Id="Error1727" Overridable="yes">A közzététel nem sikerült.</String>
+  <String Id="Error1728" Overridable="yes">A konfigurálás sikeresen megtörtént.</String>
+  <String Id="Error1729" Overridable="yes">A konfigurálás nem sikerült.</String>
+  <String Id="Error1730" Overridable="yes">Az alkalmazás eltávolításához rendszergazdának kell lennie. Az alkalmazás eltávolításához rendszergazdaként kell bejelentkeznie, vagy kapcsolatba kell lépnie a technikai tanácsadással.</String>
+  <String Id="Error1731" Overridable="yes">A [2] termék telepítőcsomagja nincs szinkronban a klienscsomaggal. Próbálja meg ismét a telepítést a megfelelő [3] telepítőcsomaggal.</String>
+  <String Id="Error1732" Overridable="yes">A [2] termék telepítésének befejezéséhez újra kell indítania a számítógépet. Mivel más felhasználók is dolgoznak a gépen, az újraindítás során elveszíthetik adataikat. Ennek ellenére újra kívánja indítani most a gépet?</String>
+  <String Id="Error1801" Overridable="yes">A [2] elérési út nem érvényes. Adjon meg másik elérési utat.</String>
+  <String Id="Error1802" Overridable="yes">Kevés a memória. Mielőtt újra megpróbálná, zárjon be minden más alkalmazást.</String>
+  <String Id="Error1803" Overridable="yes">A(z) [2] meghajtóban nincs lemez. Tegyen be egyet, és kattintson az Ismét gombra, illetve a Mégse gombbal visszatérhet az előzőleg kijelölt kötethez.</String>
+  <String Id="Error1804" Overridable="yes">A(z) [2] meghajtóban nincs lemez. Tegyen be egyet, és kattintson az Ismét gombra, illetve a Mégse gombbal visszatlrhet a tallózás párbeszédpanelhez, és másik kötetet választhat ki.</String>
+  <String Id="Error1805" Overridable="yes">A(z) [2] mappa nem létezik. Adjon meg olyan elérési utat, amely egy valóban létező mappához tartozik.</String>
+  <String Id="Error1806" Overridable="yes">A mappa olvasásához nincs elég jogosultsága.</String>
+  <String Id="Error1807" Overridable="yes">A telepítéshez nem sikerült érvényes célmappát meghatározni.</String>
+  <String Id="Error1901" Overridable="yes">Hiba történt a telepítési adatbázis olvasásakor: [2].</String>
+  <String Id="Error1902" Overridable="yes">Újraindítási művelet ütemezése: Fájl átnevezése [2] névről [3] névre. A művelet befejezéséhez újraindítás szükséges.</String>
+  <String Id="Error1903" Overridable="yes">Újraindítási művelet ütemezése: A(z) [2] fájl törlése. A művelet befejezéséhez újraindítás szükséges.</String>
+  <String Id="Error1904" Overridable="yes">A [2] modult nem sikerült regisztrálni. HRESULT [3]. Forduljon a technikusokhoz. </String>
+  <String Id="Error1905" Overridable="yes">A [2] modul rendszerleíró bejegyzéseit nem sikerült törölni. HRESULT [3]. Forduljon a technikusokhoz.</String>
+  <String Id="Error1906" Overridable="yes">A [2] csomagot nem sikerült a gyorsítótárba írni. Hiba: [3]. Forduljon a technikusokhoz. </String>
+  <String Id="Error1907" Overridable="yes">A(z) [2] betűkészlet regisztrációja nem sikerült. Ellenőrizze, hogy rendelkezik-e a betűkészletek telepítéséhez szükséges engedélyekkel, és hogy a rendszer támogatja-e ezt a betűkészletet.</String>
+  <String Id="Error1908" Overridable="yes">A(z) [2] betűkészlet rendszerleíró bejegyzéseit nem sikerült törölni. Ellenőrizze, hogy rendelkezik-e a betűkészletek eltávolításához szükséges engedélyekkel.</String>
+  <String Id="Error1909" Overridable="yes">A(z) [2] parancsikon létrehozása nem sikerült. Ellenőrizze, hogy a célmappa létezik-e, és hogy el tudja-e érni.</String>
+  <String Id="Error1910" Overridable="yes">A(z) [2] parancsikont nem sikerült eltávolítani. Ellenőrizze, hogy a hivatkozott fájl létezik-e, és hogy el tudja-e érni.</String>
+  <String Id="Error1911" Overridable="yes">Nem sikerült a(z) [2] fájl típustárának a regisztrációja. Forduljon a technikusokhoz.</String>
+  <String Id="Error1912" Overridable="yes">Nem sikerült a(z) [2] fájlhoz tartozó típustár regisztrációjának törlése. Forduljon a technikusokhoz.</String>
+  <String Id="Error1913" Overridable="yes">Az .ini fájl ([2][3]) frissítése nem sikerült. Ellenőrizze, hogy a fájl létezik-e, és hogy van-e hozzáférési engedélye.</String>
+  <String Id="Error1914" Overridable="yes">Nem sikerült beütemezni, hogy újraindításkor a(z) [3] fájl felváltsa a(z) [2] fájlt. Ellenőrizze, hogy rendelkezik-e a(z) [3] fájl írásához szükséges engedélyekkel.</String>
+  <String Id="Error1915" Overridable="yes">Az ODBC illesztőprogram-kezelő eltávolításakor hiba történt. ODBC hiba [2]: [3]. Forduljon a technikusokhoz.</String>
+  <String Id="Error1916" Overridable="yes">Az ODBC illesztőprogram-kezelő telepítésekor hiba történt. ODBC hiba [2]: [3]. Forduljon a technikusokhoz.</String>
+  <String Id="Error1917" Overridable="yes">Az ODBC illesztőprogram eltávolításakor hiba történt: [4]. ODBC hiba [2]: [3]. Ellenőrizze, hogy rendelkezik-e az ODBC illesztőprogramok eltávolításához szükséges jogosultságokkal.</String>
+  <String Id="Error1918" Overridable="yes">Az ODBC illesztőprogram telepítésekor hiba történt: [4]. ODBC hiba [2]: [3]. Ellenőrizze, hogy a(z) [4] fájl létezik-e, és hogy van-e hozzáférési engedélye.</String>
+  <String Id="Error1919" Overridable="yes">Az ODBC adatforrás konfigurálásakor hiba történt: [4]. ODBC hiba [2]: [3]. Ellenőrizze, hogy a(z) [4] fájl létezik-e, és hogy van-e hozzáférési engedélye.</String>
+  <String Id="Error1920" Overridable="yes">A(z) [2] szolgáltatás ([3]) nem indult el. Ellenőrizze, hogy rendelkezik-e elegendő jogosultsággal rendszerszolgáltatások indításához.</String>
+  <String Id="Error1921" Overridable="yes">A(z) [2] szolgáltatást ([3]) nem sikerült leállítani. Ellenőrizze, hogy rendelkezik-e elegendő jogosultsággal rendszerszolgáltatások leállításához.</String>
+  <String Id="Error1922" Overridable="yes">A(z) [2] szolgáltatást ([3]) nem sikerült eltávolítani. Ellenőrizze, hogy rendelkezik-e elegendő jogosultsággal rendszerszolgáltatások eltávolításához.</String>
+  <String Id="Error1923" Overridable="yes">A(z) [2] szolgáltatást ([3]) nem sikerült telepíteni. Ellenőrizze, hogy rendelkezik-e elegendő jogosultsággal rendszerszolgáltatások telepítéséhez.</String>
+  <String Id="Error1924" Overridable="yes">A környezeti változó ([2]) frissítése nem sikerült. Ellenőrizze, hogy rendelkezik-e elegendő jogosultsággal környezeti változók módosításához.</String>
+  <String Id="Error1925" Overridable="yes">Nincs elegendő jogosultsága, hogy a telepítést a gép összes felhasználója számára elvégezze. Jelentkezzen be rendszergazdaként, és próbálkozzon újra a telepítéssel.</String>
+  <String Id="Error1926" Overridable="yes">A(z) [3] fájl biztonsági tulajdonságait nem sikerült beállítani. Hiba: [2]. Ellenőrizze, hogy rendelkezik-e elegendő jogosultsággal a fájl biztonsági engedélyeinek módosításához.</String>
+  <String Id="Error1927" Overridable="yes">A Component Services (COM+ 1.0) nincs telepítve a számítógépen. A sikeres telepítéshez szükséges a Component Services. A Component Services szolgáltatások Windows 2000 rendszeren érhetők el.</String>
+  <String Id="Error1928" Overridable="yes">Hiba a COM+ alkalmazás regisztrálása során. Forduljon a technikusokhoz további információért.</String>
+  <String Id="Error1929" Overridable="yes">Hiba a COM+ alkalmazás regisztrációjának megszüntetése során. Forduljon a technikusokhoz további információért.</String>
+  <String Id="Error1930" Overridable="yes">A [2] ([3]) szolgáltatás leírása nem módosítható.</String>
+  <String Id="Error1931" Overridable="yes">A Windows Installer nem tudja frissíteni a [2] rendszerfájlt, mert a Windows védi. A program megfelelő működéséhez frissítenie kell az operációs rendszert. {{Csomag verziószáma: [3], Op. rendszer védte verziószám: [4]}}</String>
+  <String Id="Error1932" Overridable="yes">A Windows Installer nem tudja frissíteni a [2] védett Windows-fájlt. {{Csomag verziószáma: [3], Op. rendszer védte verziószám: [4], SFP-hiba: [5]}}</String>
+  <String Id="Error1933" Overridable="yes">A Windows Installer szolgáltatás nem tud frissíteni egy vagy több védett Windows-fájlt. {{SFP-hiba: [2]. A védett fájlok listája:\r\n[3]}}</String>
+  <String Id="Error1934" Overridable="yes">A számítógép házirendje nem engedélyezi programok telepítését a felhasználóknak.</String>
+  <String Id="Error1935" Overridable="yes">Hiba történt a(z) [6] összeállítás telepítése közben. További segítséget a Súgótól és a technikusoktól kaphat. HRESULT: [3]. {{felület: [4], függvény: [5], összetevő: [6]}}</String>
+  <String Id="Error1936" Overridable="yes">Hiba történt a(z) [6] összeállítás telepítése közben: vagy gyenge az elnevezése, vagy nincs aláírva a megkívánt hosszúságú kulccsal. HRESULT: [3]. {{felület: [4], függvény: [5], összetevő: [2]}}</String>
+  <String Id="Error1937" Overridable="yes">Hiba történt a(z) [6] összeállítás telepítése közben: az aláírás vagy a katalógus nem érvényes vagy nem hitelesíthető. HRESULT: [3]. {{felület: [4], függvény: [5], összetevő: [2]}}</String>
+  <String Id="Error1938" Overridable="yes">Hiba történt a(z) [6] összeállítás telepítése közben: egyes modulok nem találhatók meg. HRESULT: [3]. {{felület: [4], függvény: [5], összetevő: [2]}}</String>
+
+  <String Id="UITextbytes" Overridable="yes"> bájt</String>
+  <String Id="UITextGB" Overridable="yes"> GB</String>
+  <String Id="UITextKB" Overridable="yes"> KB</String>
+  <String Id="UITextMB" Overridable="yes"> MB</String>
+  <String Id="UITextMenuAbsent" Overridable="yes">Nem lesz elérhető</String>
+  <String Id="UITextMenuAdvertise" Overridable="yes">Az első használatkor települ</String>
+  <String Id="UITextMenuAllCD" Overridable="yes">Mindenestül cédéről fog futni</String>
+  <String Id="UITextMenuAllLocal" Overridable="yes">Mindenestül a lemezről fog futni</String>
+  <String Id="UITextMenuAllNetwork" Overridable="yes">Mindenestül a hálózatról fog futni</String>
+  <String Id="UITextMenuCD" Overridable="yes">Cédéről fog futni</String>
+  <String Id="UITextMenuLocal" Overridable="yes">A helyi merevlemezről fog futni</String>
+  <String Id="UITextMenuNetwork" Overridable="yes">A hálózatról fog futni</String>
+  <String Id="UITextNewFolder" Overridable="yes">Mappa|Új mappa</String>
+  <String Id="UITextScriptInProgress" Overridable="yes">Információk összegyűjtése…</String>
+  <String Id="UITextSelAbsentAbsent" Overridable="yes">Nem lesz telepítve</String>
+  <String Id="UITextSelAbsentAdvertise" Overridable="yes">Az első használatkor települ</String>
+  <String Id="UITextSelAbsentCD" Overridable="yes">Cédéről fog futni</String>
+  <String Id="UITextSelAbsentLocal" Overridable="yes">A helyi merevlemezről fog futni</String>
+  <String Id="UITextSelAbsentNetwork" Overridable="yes">A hálózatról fog futni</String>
+  <String Id="UITextSelAdvertiseAbsent" Overridable="yes">Nem lesz elérhető</String>
+  <String Id="UITextSelAdvertiseAdvertise" Overridable="yes">Az első használatkor települ</String>
+  <String Id="UITextSelAdvertiseCD" Overridable="yes">Cédéről fog futni</String>
+  <String Id="UITextSelAdvertiseLocal" Overridable="yes">A helyi merevlemezről fog futni</String>
+  <String Id="UITextSelAdvertiseNetwork" Overridable="yes">A hálózatról fog futni</String>
+  <String Id="UITextSelCDAbsent" Overridable="yes">Teljesen eltávolítja, nem lehet majd cédéről futtatni</String>
+  <String Id="UITextSelCDAdvertise" Overridable="yes">Eddig cédéről futott, most az első használatkor fog települni</String>
+  <String Id="UITextSelCDCD" Overridable="yes">Továbbra is cédéről fog futni</String>
+  <String Id="UITextSelCDLocal" Overridable="yes">Eddig cédéről, ezután a helyi merevlemezről fog futni</String>
+  <String Id="UITextSelChildCostNeg" Overridable="yes">[1] helyet szabadít fel a merevlemezen</String>
+  <String Id="UITextSelChildCostPos" Overridable="yes">[1] területre lesz szüksége a merevlemezen</String>
+  <String Id="UITextSelCostPending" Overridable="yes">Helyigény kiszámítása…</String>
+  <String Id="UITextSelLocalAbsent" Overridable="yes">El lesz távolítva</String>
+  <String Id="UITextSelLocalAdvertise" Overridable="yes">El lesz távolítva, az első használatkor fog megint települni</String>
+  <String Id="UITextSelLocalCD" Overridable="yes">El lesz távolítva, de cédéről futtatható marad</String>
+  <String Id="UITextSelLocalLocal" Overridable="yes">A merevlemezen marad</String>
+  <String Id="UITextSelLocalNetwork" Overridable="yes">El lesz távolítva, de hálózatról futtatható marad</String>
+  <String Id="UITextSelNetworkAbsent" Overridable="yes">El lesz távolítva, hálózatról sem lesz futtatható</String>
+  <String Id="UITextSelNetworkAdvertise" Overridable="yes">Eddig hálózatról futott, most az első használatkor fog települni</String>
+  <String Id="UITextSelNetworkLocal" Overridable="yes">Eddig hálózatról, ezután a helyi merevlemezről fog futni</String>
+  <String Id="UITextSelNetworkNetwork" Overridable="yes">Továbbra is hálózatról fog futni</String>
+  <String Id="UITextSelParentCostNegNeg" Overridable="yes">[1] területet szabadít fel a merevlemezen. [3] részfunkciója közül [2] van kijelölve, ezek [4] területet szabadítanak fel.</String>
+  <String Id="UITextSelParentCostNegPos" Overridable="yes">[1] területet szabadít fel a merevlemezen. [3] részfunkciója közül [2] van kijelölve, ezek [4] területet foglalnak el.</String>
+  <String Id="UITextSelParentCostPosNeg" Overridable="yes">[1] területet foglal el a merevlemezen. [3] részfunkciója közül [2] van kijelölve, ezek [4] területet szabadítanak fel.</String>
+  <String Id="UITextSelParentCostPosPos" Overridable="yes">[1] területet foglal el a merevlemezen. [3] részfunkciója közül [2] van kijelölve, ezek [4] területet foglalnak el.</String>
+  <String Id="UITextTimeRemaining" Overridable="yes">Hátralévő idő: {[1] perc }{[2] mp}</String>
+  <String Id="UITextVolumeCostAvailable" Overridable="yes">Szabad</String>
+  <String Id="UITextVolumeCostDifference" Overridable="yes">Különbség</String>
+  <String Id="UITextVolumeCostRequired" Overridable="yes">Szükséges</String>
+  <String Id="UITextVolumeCostSize" Overridable="yes">Lemez mérete</String>
+  <String Id="UITextVolumeCostVolume" Overridable="yes">Kötet</String>
+</WixLocalization>

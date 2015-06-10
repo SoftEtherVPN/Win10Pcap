@@ -1,0 +1,59 @@
+[Version]
+Signature					= "$Windows NT$"
+Class						= NetTrans
+ClassGUID					= {4D36E975-E325-11CE-BFC1-08002BE10318}
+Provider					= %CompanyName%
+DriverVer					= 06/02/2015, 1.0.0.1
+CatalogFile.NT				= Win10Pcap.cat
+
+[Manufacturer]
+%CompanyName% 				= SoftEther, NTamd64
+
+[SoftEther.NTamd64]
+%Win10Pcap_DisplayName%		= Win10Pcap_Install, Win10Pcap
+
+[Win10Pcap_Install]
+Characteristics				= 0x4080
+AddReg						= Win10Pcap_Install_Ndi
+CopyFiles					= Win10Pcap_CopyFiles
+
+[Win10Pcap_Install_Ndi]
+HKR, Ndi, Service, , "Win10Pcap"
+HKR, Ndi, HelpText, , %Win10Pcap_Description%
+HKR, Ndi\Interfaces, UpperRange, , noupper
+HKR, Ndi\Interfaces, LowerRange, , "ndis5,ndis4"
+
+[Win10Pcap_Install.Services]
+AddService					= Win10Pcap, , Win10Pcap_Service_Install
+
+[Win10Pcap_Service_Install]
+DisplayName					= %Win10Pcap_DisplayName%
+Description					= %Win10Pcap_Description%
+ServiceType					= 1
+StartType					= 1
+ErrorControl				= 1
+ServiceBinary				= %12%\Win10Pcap.sys
+LoadOrderGroup				= PNP_TDI
+
+[Win10Pcap_Install.Remove.Services]
+DelService					= Win10Pcap, 0x200
+
+[SourceDisksNames]
+1							= %DiskDescription%, "", , 
+
+[SourceDisksFiles]
+Win10Pcap.sys				= 1
+
+[DestinationDirs]
+Win10Pcap_CopyFiles				= 12
+
+[Win10Pcap_CopyFiles]
+Win10Pcap.sys, , , 2
+
+[Strings]
+CompanyName					= "Win10Pcap Native x64"
+DiskDescription				= "Win10Pcap Packet Capture Driver Installation Disk"
+Win10Pcap_DisplayName		= "Win10Pcap Packet Capture Driver"
+Win10Pcap_Description		= "A lightweight helper kernel-mode module for Win10Pcap."
+
+

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Name="Win10Pcap"
+					 Language="1033"
+					 Version="10.1.5001"
+					 Manufacturer="Daiyuu Nobori, University of Tsukuba, Japan"
+					 Id="{B5B58F8A-1984-4f3e-B400-235A6E005001}"
+					 UpgradeCode="{711CA6BE-6851-45fd-976E-C3968900C9AB}">
+
+		<Package InstallerVersion="200" Compressed="yes" Languages="1033"
+						 Description="Win10Pcap"
+						 Manufacturer="Daiyuu Nobori, University of Tsukuba, Japan"
+						 Platform="x86" />
+
+		<Upgrade Id="{711CA6BE-6851-45fd-976E-C3968900C9AB}">
+			<UpgradeVersion OnlyDetect="yes" Property="SELFFOUND"
+											Minimum="10.1.5001" IncludeMinimum="yes"
+											Maximum="10.1.5001" IncludeMaximum="yes" />
+			<UpgradeVersion OnlyDetect="yes" Property="NEWERFOUND"
+											Minimum="10.1.5001" IncludeMinimum="no" />
+			<UpgradeVersion OnlyDetect="no" Property="PREVIOUSFOUND" Minimum="1.00.0000" IncludeMinimum="yes"
+											Maximum="10.1.5001" IncludeMaximum="no" />
+		</Upgrade>
+
+
+		<Media Id="1" Cabinet="Win10Pcap.cab" EmbedCab="yes" />
+
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ALLUSERSPROFILE" />
+			<Directory Id="AdminToolsFolder" />
+			<Directory Id="AppDataFolder" />
+			<Directory Id="CommonAppDataFolder" />
+			<Directory Id="CommonFiles64Folder" />
+			<Directory Id="CommonFilesFolder" />
+			<Directory Id="DesktopFolder" />
+			<Directory Id="FavoritesFolder" />
+			<Directory Id="FontsFolder" />
+			<Directory Id="LocalAppDataFolder" />
+			<Directory Id="MyPicturesFolder" />
+			<Directory Id="PersonalFolder" />
+			<Directory Id="SendToFolder" />
+			<Directory Id="StartMenuFolder" />
+			<Directory Id="StartupFolder" />
+			<Directory Id="WindowsFolder" />
+			<Directory Id="System16Folder" />
+			<Directory Id="SystemFolder" />
+			<Directory Id="System64Folder" />
+			<Directory Id="TempFolder" />
+			<Directory Id="TemplateFolder" />
+			<Directory Id="USERPROFILE" />
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLDIR" Name="Win10Pcap">
+					<Directory Id="DIR_Win32" Name="Win32">
+						<Component Id="DIR_Win32_Component" Guid="{1BDA6B01-9988-478c-AA5B-E973A7DC0001}" SharedDllRefCount="no" Win64="no">
+							<File Id="DIR_Win32_Installer_exe" Name="Installer.exe" KeyPath="yes" Vital="yes" Compressed="default" DiskId="1" Source="bin\Win32\Installer.exe" />
+							<File Id="DIR_Win32_Packet_dll" Name="Packet.dll" KeyPath="no" Vital="yes" Compressed="default" DiskId="1" Source="bin\Win32\Packet.dll" />
+							<File Id="DIR_Win32_wpcap_dll" Name="wpcap.dll" KeyPath="no" Vital="yes" Compressed="default" DiskId="1" Source="bin\Win32\wpcap.dll" />
+						</Component>
+
+						<Directory Id="DIR_Win32_drivers" Name="drivers">
+							<Directory Id="DIR_Win32_drivers_win78" Name="win78">
+								<Component Id="DIR_Win32_drivers_win78_Component" Guid="{1BDA6B01-9988-478c-AA5B-E973A7DC0004}" SharedDllRefCount="no" Win64="no">
+									<File Id="DIR_Win32_drivers_win78_Win10Pcap_sys" Name="Win10Pcap.sys" KeyPath="yes" Vital="yes" Compressed="default" DiskId="1" Source="bin\Win32\drivers\win78\Win10Pcap.sys" />
+									<File Id="DIR_Win32_drivers_win78_Win10Pcap_cat" Name="Win10Pcap.cat" KeyPath="no" Vital="yes" Compressed="default" DiskId="1" Source="bin\Win32\drivers\win78\Win10Pcap.cat" />
+									<File Id="DIR_Win32_drivers_win78_Win10Pcap_inf" Name="Win10Pcap.inf" KeyPath="no" Vital="yes" Compressed="default" DiskId="1" Source="bin\Win32\drivers\win78\Win10Pcap.inf" />
+								</Component>
+							</Directory>
+
+							<Directory Id="DIR_Win32_drivers_win10" Name="win10">
+								<Component Id="DIR_Win32_drivers_win10_Component" Guid="{1BDA6B01-9988-478c-AA5B-E973A7DC0005}" SharedDllRefCount="no" Win64="no">
+									<File Id="DIR_Win32_drivers_win10_Win10Pcap_sys" Name="Win10Pcap.sys" KeyPath="yes" Vital="yes" Compressed="default" DiskId="1" Source="bin\Win32\drivers\win10\Win10Pcap.sys" />
+									<File Id="DIR_Win32_drivers_win10_Win10Pcap_cat" Name="Win10Pcap.cat" KeyPath="no" Vital="yes" Compressed="default" DiskId="1" Source="bin\Win32\drivers\win10\Win10Pcap.cat" />
+									<File Id="DIR_Win32_drivers_win10_Win10Pcap_inf" Name="Win10Pcap.inf" KeyPath="no" Vital="yes" Compressed="default" DiskId="1" Source="bin\Win32\drivers\win10\Win10Pcap.inf" />
+								</Component>
+							</Directory>
+
+						</Directory>
+
+					</Directory>
+					<Directory Id="DIR_x64" Name="x64">
+						<Component Id="DIR_x64_Component" Guid="{1BDA6B01-9988-478c-AA5B-E973A7DC0002}" SharedDllRefCount="no" Win64="no">
+							<File Id="DIR_x64_Installer_exe" Name="Installer.exe" KeyPath="yes" Vital="yes" Compressed="default" DiskId="1" Source="bin\x64\Installer.exe" />
+							<File Id="DIR_x64_Packet_dll" Name="Packet.dll" KeyPath="no" Vital="yes" Compressed="default" DiskId="1" Source="bin\x64\Packet.dll" />
+							<File Id="DIR_x64_wpcap_dll" Name="wpcap.dll" KeyPath="no" Vital="yes" Compressed="default" DiskId="1" Source="bin\x64\wpcap.dll" />
+						</Component>
+
+						<Directory Id="DIR_x64_drivers" Name="drivers">
+							<Directory Id="DIR_x64_drivers_win78" Name="win78">
+								<Component Id="DIR_x64_drivers_win78_Component" Guid="{1BDA6B01-9988-478c-AA5B-E973A7DC0003}" SharedDllRefCount="no" Win64="no">
+									<File Id="DIR_x64_drivers_win78_Win10Pcap_sys" Name="Win10Pcap.sys" KeyPath="yes" Vital="yes" Compressed="default" DiskId="1" Source="bin\x64\drivers\win78\Win10Pcap.sys" />
+									<File Id="DIR_x64_drivers_win78_Win10Pcap_cat" Name="Win10Pcap.cat" KeyPath="no" Vital="yes" Compressed="default" DiskId="1" Source="bin\x64\drivers\win78\Win10Pcap.cat" />
+									<File Id="DIR_x64_drivers_win78_Win10Pcap_inf" Name="Win10Pcap.inf" KeyPath="no" Vital="yes" Compressed="default" DiskId="1" Source="bin\x64\drivers\win78\Win10Pcap.inf" />
+								</Component>
+							</Directory>
+
+
+							<Directory Id="DIR_x64_drivers_win10" Name="win10">
+								<Component Id="DIR_x64_drivers_win10_Component" Guid="{1BDA6B01-9988-478c-AA5B-E973A7DC0006}" SharedDllRefCount="no" Win64="no">
+									<File Id="DIR_x64_drivers_win10_Win10Pcap_sys" Name="Win10Pcap.sys" KeyPath="yes" Vital="yes" Compressed="default" DiskId="1" Source="bin\x64\drivers\win10\Win10Pcap.sys" />
+									<File Id="DIR_x64_drivers_win10_Win10Pcap_cat" Name="Win10Pcap.cat" KeyPath="no" Vital="yes" Compressed="default" DiskId="1" Source="bin\x64\drivers\win10\Win10Pcap.cat" />
+									<File Id="DIR_x64_drivers_win10_Win10Pcap_inf" Name="Win10Pcap.inf" KeyPath="no" Vital="yes" Compressed="default" DiskId="1" Source="bin\x64\drivers\win10\Win10Pcap.inf" />
+								</Component>
+							</Directory>
+						</Directory>
+
+					</Directory>
+				</Directory>
+			</Directory>
+			<Directory Id="ProgramFiles64Folder"/>
+		</Directory>
+
+		<CustomAction Id="AlreadyUpdated" Error="This program has already been installed." />
+		<CustomAction Id="NoDowngrade"
+									Error="A newer version of this program has already been installed." />
+		<CustomAction Id="RunInstaller" FileKey="DIR_Win32_Installer_exe" ExeCommand="/install" Return="ignore" Execute="deferred" Impersonate="no" />
+		<CustomAction Id="RunUninstaller" FileKey="DIR_Win32_Installer_exe" ExeCommand="/uninstall" Return="ignore" Execute="deferred" Impersonate="no" />
+
+		<InstallExecuteSequence>
+			<Custom Action="RunInstaller" After="StartServices">(NOT Installed)</Custom>
+			<Custom Action="RunUninstaller" After="StopServices">(Installed)</Custom>
+			<Custom Action="AlreadyUpdated" After="FindRelatedProducts">SELFFOUND</Custom>
+			<Custom Action="NoDowngrade" After="FindRelatedProducts">NEWERFOUND</Custom>
+			<RemoveExistingProducts After="InstallValidate" />
+		</InstallExecuteSequence>
+
+		<Icon Id="Setup.exe" SourceFile="BuildFiles\WXS\Files\Icons\NIC.exe" />
+
+		<Feature Id="FeatureWin10Pcap" Absent="disallow" AllowAdvertise="no" ConfigurableDirectory="INSTALLDIR"
+						 Description="Win10Pcap"
+						 Display="hidden" Level="1"
+						 Title="Win10Pcap"
+						 TypicalDefault="install">
+			 <ComponentRef Id="DIR_Win32_Component" />
+			 <ComponentRef Id="DIR_x64_Component" />
+			 <ComponentRef Id="DIR_Win32_drivers_win78_Component" />
+			 <ComponentRef Id="DIR_x64_drivers_win78_Component" />
+			 <ComponentRef Id="DIR_Win32_drivers_win10_Component" />
+			 <ComponentRef Id="DIR_x64_drivers_win10_Component" />
+		</Feature>
+
+		<Property Id="ARPPRODUCTICON" Value="Setup.exe" />
+		<Property Id="ARPCOMMENTS">Win10Pcap</Property>
+		<Property Id="ARPCONTACT">Daiyuu Nobori, University of Tsukuba</Property>
+		<Property Id="ARPHELPLINK">http://www.win10pcap.org/</Property>
+		<Property Id="ARPURLINFOABOUT">http://www.win10pcap.org/</Property>
+		<Property Id="ARPURLUPDATEINFO">http://www.win10pcap.org/</Property>
+		<Property Id="ARPHELPTELEPHONE">N/A</Property>
+		<Property Id="ALLUSERS">2</Property>
+
+		<Property Id="INSTALLDIR">
+			<RegistrySearch Id="InstallDirRegistry" Type="raw"
+											Root="HKLM" Key="Software\Daiyuu Nobori\InstallInfo\[UpgradeCode]"
+											Name="InstallDir" />
+		</Property>
+
+		<Condition Message="This operating system is not supported by Win10Pcap.">(Not Version9X=400)</Condition>
+		<Condition Message="This operating system is not supported by Win10Pcap.">(VersionNT>=601)</Condition>
+
+		<UIRef Id="WixUI_InstallDir"/>
+		<UIRef Id="WixUI_ErrorProgressText" />
+		<Property Id="WIXUI_INSTALLDIR" Value="INSTALLDIR" />
+		<WixVariable Id="WixUILicenseRtf" Value="BuildFiles\WXS\Files\License.rtf" />
+		<WixVariable Id="WixUIDialogBmp" Value="BuildFiles\WXS\Files\Bitmaps\Start_Client.bmp" />
+		<WixVariable Id="WixUIBannerBmp" Value="BuildFiles\WXS\Files\Bitmaps\Banner_Client.bmp" />
+
+	</Product>
+</Wix>
+

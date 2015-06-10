@@ -1,0 +1,77 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\..\..\WixBuild.Common.targets" />
+  <PropertyGroup>
+    <ProjectGuid>{2d4ff07b-26f8-4bef-b41c-e4383f86dc32}</ProjectGuid>
+    <OutputName>ui</OutputName>
+    <OutputType>Library</OutputType>
+    <IncludeSearchPaths>..\..\..\inc</IncludeSearchPaths>
+    <BindFiles>True</BindFiles>
+    <Pedantic>True</Pedantic>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <!-- Suppress ICE45 until we get a new darice.cub drop that properly supports the ElevationShield control attribute bit -->
+    <SuppressIces>ICE45</SuppressIces>
+    <Cultures>en-us</Cultures>
+    <IncludeSearchPaths>$(ROOT)inc</IncludeSearchPaths>
+    <DefineConstants>
+      $(DefineConstants);
+      bannerBmp=$(MSBuildProjectDirectory)\Bitmaps\bannrbmp.bmp;
+      dialogBmp=$(MSBuildProjectDirectory)\Bitmaps\dlgbmp.bmp;
+      exclamationIco=$(MSBuildProjectDirectory)\Bitmaps\exclamic.ico;
+      infoIco=$(MSBuildProjectDirectory)\Bitmaps\info.ico;
+      licenseRtf=$(MSBuildProjectDirectory)\license.rtf;
+      newIco=$(MSBuildProjectDirectory)\Bitmaps\new.ico;
+      upIco=$(MSBuildProjectDirectory)\Bitmaps\up.ico;
+      printeulaDll=$(OutputPath)\PrintEula.dll;
+    </DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BrowseDlg.wxs" />
+    <Compile Include="CancelDlg.wxs" />
+    <Compile Include="Common.wxs" />
+    <Compile Include="CustomizeDlg.wxs" />
+    <Compile Include="DiskCostDlg.wxs" />
+    <Compile Include="ErrorDlg.wxs" />
+    <Compile Include="ErrorProgressText.wxs" />
+    <Compile Include="ExitDialog.wxs" />
+    <Compile Include="FatalError.wxs" />
+    <Compile Include="FilesInUse.wxs" />
+    <Compile Include="InvalidDirDlg.wxs" />
+    <Compile Include="LicenseAgreementDlg.wxs" />
+    <Compile Include="MaintenanceTypeDlg.wxs" />
+    <Compile Include="MaintenanceWelcomeDlg.wxs" />
+    <Compile Include="MsiRMFilesInUse.wxs" />
+    <Compile Include="OutOfDiskDlg.wxs" />
+    <Compile Include="OutOfRbDiskDlg.wxs" />
+    <Compile Include="PrepareDlg.wxs" />
+    <Compile Include="ProgressDlg.wxs" />
+    <Compile Include="ResumeDlg.wxs" />
+    <Compile Include="SetupTypeDlg.wxs" />
+    <Compile Include="UserExit.wxs" />
+    <Compile Include="VerifyReadyDlg.wxs" />
+    <Compile Include="WaitForCostingDlg.wxs" />
+    <Compile Include="WelcomeDlg.wxs" />
+    <Compile Include="WixUI_FeatureTree.wxs" />
+    <Compile Include="InstallDirDlg.wxs" />
+    <Compile Include="WixUI_InstallDir.wxs" />
+    <Compile Include="WelcomeEulaDlg.wxs" />
+    <Compile Include="WixUI_Minimal.wxs" />
+    <Compile Include="WixUI_Mondo.wxs" />
+    <Compile Include="AdvancedWelcomeEulaDlg.wxs" />
+    <Compile Include="FeaturesDlg.wxs" />
+    <Compile Include="InstallScopeDlg.wxs" />
+    <Compile Include="WixUI_Advanced.wxs" />
+    <EmbeddedResource Include="WixUI_cs-cz.wxl" />
+    <EmbeddedResource Include="WixUI_de-de.wxl" />
+    <EmbeddedResource Include="WixUI_en-us.wxl" />
+    <EmbeddedResource Include="WixUI_es-es.wxl" />
+    <EmbeddedResource Include="WixUI_fr-fr.wxl" />
+    <EmbeddedResource Include="WixUI_hu-hu.wxl" />
+    <EmbeddedResource Include="WixUI_it-it.wxl" />
+    <EmbeddedResource Include="WixUI_ja-jp.wxl" />
+    <EmbeddedResource Include="WixUI_nl-nl.wxl" />
+    <EmbeddedResource Include="WixUI_pl-pl.wxl" />
+    <EmbeddedResource Include="WixUI_ru-ru.wxl" />
+    <EmbeddedResource Include="WixUI_uk-ua.wxl" />
+  </ItemGroup>
+  <Import Project="$(WixTargetsPath)" />
+</Project>
