@@ -3,7 +3,7 @@ Signature					= "$Windows NT$"
 Class						= NetTrans
 ClassGUID					= {4D36E975-E325-11CE-BFC1-08002BE10318}
 Provider					= %CompanyName%
-DriverVer					= 06/02/2015, 1.0.0.1
+DriverVer					= 10/08/2015, 10.2.0.5002
 CatalogFile.NT				= Win10Pcap.cat
 
 [Manufacturer]

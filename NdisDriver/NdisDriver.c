@@ -572,6 +572,8 @@ NTSTATUS SlDeviceReadProc(DEVICE_OBJECT *device_object, IRP *irp)
 			{
 				MDL *mdl;
 
+				ProbeForWrite(irp->UserBuffer, sizeof(SL_ADAPTER_INFO_LIST), 1);
+
 				mdl = IoAllocateMdl(dst, irp_stack->Parameters.Read.Length, false, false, NULL);
 				if (mdl != NULL)
 				{
@@ -633,6 +635,8 @@ NTSTATUS SlDeviceReadProc(DEVICE_OBJECT *device_object, IRP *irp)
 				UINT num = 0;
 				bool left = true;
 				MDL *mdl;
+
+				ProbeForWrite(irp->UserBuffer, SL_EXCHANGE_BUFFER_SIZE, 1);
 				
 				mdl = IoAllocateMdl(buf, SL_EXCHANGE_BUFFER_SIZE, false, false, NULL);
 				if (mdl != NULL)
@@ -737,6 +741,8 @@ NTSTATUS SlDeviceWriteProc(DEVICE_OBJECT *device_object, IRP *irp)
 				// Write the packet
 				MDL *mdl;
 				UINT num = SL_NUM_PACKET(buf);
+
+				ProbeForRead(irp->UserBuffer, SL_EXCHANGE_BUFFER_SIZE, 1);
 
 				mdl = IoAllocateMdl(buf, SL_EXCHANGE_BUFFER_SIZE, false, false, NULL);
 				if (mdl != NULL)
@@ -1019,12 +1025,14 @@ NTSTATUS SlDeviceIoControlProc(DEVICE_OBJECT *device_object, IRP *irp)
 		switch (irp_stack->Parameters.DeviceIoControl.IoControlCode)
 		{
 		case SL_IOCTL_GET_EVENT_NAME:
-			if (irp_stack->Parameters.DeviceIoControl.InputBufferLength >= sizeof(SL_IOCTL_EVENT_NAME))
+			if (irp_stack->Parameters.DeviceIoControl.OutputBufferLength >= sizeof(SL_IOCTL_EVENT_NAME))
 			{
 				SL_IOCTL_EVENT_NAME *t = irp->UserBuffer;
 
 				if (t != NULL)
 				{
+					ProbeForWrite(t, sizeof(SL_IOCTL_EVENT_NAME), 1);
+
 					strcpy(t->EventNameWin32, f->EventNameWin32);
 
 					ret_size = sizeof(SL_IOCTL_EVENT_NAME);

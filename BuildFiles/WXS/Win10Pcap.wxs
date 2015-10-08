@@ -2,9 +2,9 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
 	<Product Name="Win10Pcap"
 					 Language="1033"
-					 Version="10.1.5001"
+					 Version="10.2.5002"
 					 Manufacturer="Daiyuu Nobori, University of Tsukuba, Japan"
-					 Id="{B5B58F8A-1984-4f3e-B400-235A6E005001}"
+					 Id="{B5B58F8A-1984-4f3e-B400-235A6E005002}"
 					 UpgradeCode="{711CA6BE-6851-45fd-976E-C3968900C9AB}">
 
 		<Package InstallerVersion="200" Compressed="yes" Languages="1033"
@@ -14,12 +14,12 @@
 
 		<Upgrade Id="{711CA6BE-6851-45fd-976E-C3968900C9AB}">
 			<UpgradeVersion OnlyDetect="yes" Property="SELFFOUND"
-											Minimum="10.1.5001" IncludeMinimum="yes"
-											Maximum="10.1.5001" IncludeMaximum="yes" />
+											Minimum="10.2.5002" IncludeMinimum="yes"
+											Maximum="10.2.5002" IncludeMaximum="yes" />
 			<UpgradeVersion OnlyDetect="yes" Property="NEWERFOUND"
-											Minimum="10.1.5001" IncludeMinimum="no" />
+											Minimum="10.2.5002" IncludeMinimum="no" />
 			<UpgradeVersion OnlyDetect="no" Property="PREVIOUSFOUND" Minimum="1.00.0000" IncludeMinimum="yes"
-											Maximum="10.1.5001" IncludeMaximum="no" />
+											Maximum="10.2.5002" IncludeMaximum="no" />
 		</Upgrade>
 
 

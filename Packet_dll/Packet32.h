@@ -46,8 +46,7 @@
 #define __PACKET32
 
 
-#define	PACKET_CURRENT_VERSION		"10, 1, 0, 5001"
-//#define	PACKET_CURRENT_VERSION		"4.1.3"
+#define	PACKET_CURRENT_VERSION		"10, 2, 0, 5002"
 
 #include <winsock2.h>
 
