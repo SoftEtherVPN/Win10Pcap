@@ -1,14 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NdisDriver", "NdisDriver\NdisDriver.vcproj", "{2389346B-7672-4BC0-A3DD-0167B20F18C7}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NdisDriver", "NdisDriver\NdisDriver.vcxproj", "{2389346B-7672-4BC0-A3DD-0167B20F18C7}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Packet_dll", "Packet_dll\Packet_dll.vcproj", "{BB1D6C0B-084E-4FCE-AF8D-BB3CFDC1D8EA}"
-	ProjectSection(ProjectDependencies) = postProject
-		{2389346B-7672-4BC0-A3DD-0167B20F18C7} = {2389346B-7672-4BC0-A3DD-0167B20F18C7}
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Packet_dll", "Packet_dll\Packet_dll.vcxproj", "{BB1D6C0B-084E-4FCE-AF8D-BB3CFDC1D8EA}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Installer", "Installer\Installer.vcproj", "{A67E6EC7-46B9-4146-86A5-55F5B8767151}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Installer", "Installer\Installer.vcxproj", "{A67E6EC7-46B9-4146-86A5-55F5B8767151}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,5 +43,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B316FC5E-4AFA-41E6-818C-5F76E7EF37E6}
 	EndGlobalSection
 EndGlobal
