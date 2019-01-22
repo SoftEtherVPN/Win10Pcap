@@ -45,7 +45,27 @@ DelService					= Win10Pcap, 0x200
 Win10Pcap.sys				= 1
 
 [DestinationDirs]
+DefaultDestDir          = 12
 Win10Pcap_CopyFiles				= 12
+
+
+[DefaultInstall]
+OptionDesc          = %ServiceDescription%
+CopyFiles           = Win10Pcap_CopyFiles
+
+[DefaultInstall.Services]
+AddService          = Win10Pcap, , Win10Pcap_Service_Install
+
+;;
+;; Default uninstall sections
+;;
+
+[DefaultUninstall]
+DelFiles   = Win10Pcap_CopyFiles
+
+[DefaultUninstall.Services]
+DelService = %ServiceName%,0x200      ;Ensure service is stopped before deleting
+
 
 [Win10Pcap_CopyFiles]
 Win10Pcap.sys, , , 2
