@@ -1657,7 +1657,7 @@ void SeSwap(void *buf, UINT size)
 	}
 
 	SeCopy(buf, tmp, size);
-	SeFree(buf);
+	SeFree(tmp);
 }
 
 USHORT SeSwap16(USHORT value)
@@ -1842,16 +1842,14 @@ void SeFree(void *addr)
 bool SeIsLittleEndian()
 {
 	static UINT value = 0x00000001;
-	UCHAR *c;
+	UCHAR *c = (UCHAR *)&value;
 
-	c = (UCHAR *)value;
-
-	return (c == 0 ? false : true);
+	return (*c == 1);
 }
 
 bool SeIsBigEndian()
 {
-	return SeIsLittleEndian() ? false : true;
+	return !SeIsLittleEndian();
 }
 
 bool SeCmpEx(void *addr1, UINT size1, void *addr2, UINT size2)
