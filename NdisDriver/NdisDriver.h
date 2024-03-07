@@ -74,8 +74,8 @@
 #define	_X86_
 #else	// CPU_64
 #ifndef	NEO_IA64
-#define	_AMD64_
-#define	AMD64
+#define	_AMD64_ 1
+#define	AMD64 1
 #else	// NEO_IA64
 #define	_IA64_
 #define	IA64

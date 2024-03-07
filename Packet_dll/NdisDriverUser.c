@@ -125,7 +125,7 @@ bool SuPutPacket(SU_ADAPTER *a, void *buf, UINT size)
 		SL_SIZE_OF_PACKET(a->PutBuffer, i) = size;
 		SeCopy(SL_ADDR_OF_PACKET(a->PutBuffer, i), buf, size);
 
-		SeFree(buf);
+		//SeFree(buf);
 	}
 
 	return true;
