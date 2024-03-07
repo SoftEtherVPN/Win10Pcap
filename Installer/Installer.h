@@ -71,6 +71,7 @@
 #define	OS_WIN7		1
 #define	OS_WIN8		2
 #define	OS_WIN10	3
+#define	OS_WIN11	4
 #define	OS_UNKNOWN	0
 
 int PASCAL WinMain(HINSTANCE hInst, HINSTANCE hPrev, char *CmdLine, int CmdShow);

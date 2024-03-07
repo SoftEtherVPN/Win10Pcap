@@ -88,26 +88,36 @@
 
 UINT GetWindowsVersion()
 {
-	OSVERSIONINFO info;
+	int osver = 0.0;
 	UINT ret = OS_UNKNOWN;
+	NTSTATUS(WINAPI * RtlGetVersion)(LPOSVERSIONINFOEXW);
 
-	SeZero(&info, sizeof(info));
-	info.dwOSVersionInfoSize = sizeof(info);
-	GetVersionEx(&info);
+	OSVERSIONINFOEXW osInfo;
+	*(FARPROC*)&RtlGetVersion = GetProcAddress(GetModuleHandleA("ntdll"), "RtlGetVersion");
 
-	if (info.dwPlatformId == VER_PLATFORM_WIN32_NT)
+	if (NULL != RtlGetVersion)
 	{
-		if (info.dwMajorVersion == 6 && info.dwMinorVersion == 1)
+		osInfo.dwOSVersionInfoSize = sizeof(osInfo);
+		RtlGetVersion(&osInfo);
+		osver = osInfo.dwMajorVersion;
+
+		if (osver == 7)
 		{
 			ret = OS_WIN7;
 		}
-		else if (info.dwMajorVersion == 6 && (info.dwMinorVersion == 2 || info.dwMinorVersion == 3))
+
+		else if (osver == 8)
 		{
 			ret = OS_WIN8;
 		}
-		else if ((info.dwMajorVersion == 6 && info.dwMinorVersion == 4) || (info.dwMajorVersion >= 7))
+
+		else if (osver == 10)
 		{
 			ret = OS_WIN10;
+		}
+		else if (osver == 11)
+		{
+			ret = OS_WIN11;
 		}
 	}
 
@@ -267,6 +277,10 @@ int PASCAL WinMain(HINSTANCE hInst, HINSTANCE hPrev, char *CmdLine, int CmdShow)
 		}
 
 		SeStrCpy(driver_inf_filename, sizeof(driver_inf_filename), exe_dir);
+		if (os_ver == OS_WIN11)
+		{
+			SeStrCat(driver_inf_filename, sizeof(driver_inf_filename), "\\drivers\\win11");
+		}
 		if (os_ver == OS_WIN10)
 		{
 			SeStrCat(driver_inf_filename, sizeof(driver_inf_filename), "\\drivers\\win10");
